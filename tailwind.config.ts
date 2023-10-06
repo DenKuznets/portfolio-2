@@ -19,6 +19,8 @@ const config: Config = {
             yellow: "#FFC448",
             almostBlack: "#11141D",
             orange: "#F26440",
+            pTextColor: "grey",
+            aTextColor: "grey",
         },
         screens: {
             uhd: "2560px",
