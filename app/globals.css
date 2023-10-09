@@ -3,100 +3,100 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
 @layer base {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: theme(fontFamily.sans);
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    @apply text-gray-500;
+  }
+
+  a {
+    @apply text-gray-500;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    @apply font-serif;
+  }
+
+  a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    color: theme(colors.almostBlack);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  section {
+    padding: 0 1em;
+    width: 100%;
+  }
+
+  img,
+  .small-icon,
+  svg {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+
+  @media screen(mobileL) {
     h1 {
-        font-size: 3rem;
-        line-height: 1.1;
+      font-size: 4.5rem;
     }
-    h2 {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.7rem;
-    }
-
     p {
-        font-size: 0.8rem;
-        @apply text-gray-500;
+      font-size: 1rem;
     }
+  }
 
-    a {
-        @apply text-gray-500;
-        text-decoration: none;
-        transition: all 0.2s;
-        cursor: pointer;
-        font-family: theme(fontFamily.serif);
-    }
-
-    a:hover {
-        opacity: 1;
-        text-decoration: underline;
-        color: theme(colors.almostBlack);
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    section {
-        padding: 0 1em;
-        width: 100%;
-    }
-
-    img,
-    .small-icon,
-    svg {
-        user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-    }
-
-    @media screen(mobileL) {
-        h1 {
-            font-size: 4.5rem;
-        }
-        p {
-            font-size: 1rem;
-        }
-    }
-
-    .social-icon-container {
-        padding: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-        background-color: "#f6f6f6";
-        color: theme(colors.almostBlack);
-    }
-    .social-icon-container:hover {
-        transform: scale(1.2);
-    }
+  .social-icon-container {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: "#f6f6f6";
+    color: theme(colors.almostBlack);
+  }
+  .social-icon-container:hover {
+    transform: scale(1.2);
+  }
 }
