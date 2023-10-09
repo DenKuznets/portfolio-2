@@ -20,7 +20,7 @@ const NavBar: FC<NavBarProps> = ({ onClick }) => {
 
   return (
     <nav>
-      <ul className="flex min-h-screen flex-col items-center justify-center gap-y-10 text-center font-serif text-[2rem]">
+      <ul className="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16">
         {listElements}
       </ul>
     </nav>
