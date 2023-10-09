@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-// import text from "@/utils/text";
 import text from "../../utils/text";
 
 export interface NavBarProps {

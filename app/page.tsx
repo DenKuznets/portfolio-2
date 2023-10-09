@@ -5,6 +5,7 @@ export default function Home() {
     return (
         <main className="pt-[100px]">
             <h1>main page</h1>
+            <NavBar />
         </main>
     );
 }
