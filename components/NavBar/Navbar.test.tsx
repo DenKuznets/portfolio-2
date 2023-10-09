@@ -1,10 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import NavBar, { NAVBAR_TESTIDS } from "./NavBar";
 import "@testing-library/jest-dom";
+import text from "../../utils/text";
 
 test("renders correctly", () => {
   render(<NavBar />);
   const container = screen.getByTestId(NAVBAR_TESTIDS.NAVBAR_CONTAINER);
+  const list = screen.getByTestId(NAVBAR_TESTIDS.NAVBAR_LIST);
+  const listItems = screen.getAllByTestId(NAVBAR_TESTIDS.NAVBAR_LIST_ITEM);
   expect(container).toBeInTheDocument();
-  // const listItems = screen.getByTestId('')
+  expect(list).toBeInTheDocument();
+  expect(listItems).toHaveLength(Object.keys(text.header.nav).length);
 });
