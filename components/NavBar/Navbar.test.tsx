@@ -12,3 +12,5 @@ test("renders correctly", () => {
   expect(list).toBeInTheDocument();
   expect(listItems).toHaveLength(Object.keys(text.header.nav).length);
 });
+
+test("renders navbar unchanged", () => {});
