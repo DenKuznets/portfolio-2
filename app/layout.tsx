@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { raleway, merriweather } from "./fonts";
+import { raleway, merriweather, leagueSpartan } from "./fonts";
 
 export const metadata: Metadata = {
     title: "Denis Kuznetsov | Frontend Developer",
@@ -13,7 +13,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html className={`scroll-pt-20 ${raleway.variable}`} lang="ru">
+        <html
+            className={`scroll-pt-20 ${raleway.variable} ${merriweather.variable} ${leagueSpartan.variable}`}
+            lang="ru"
+        >
             <body
                 className={` text-almostBlack text-lg first-letter:uppercase`}
             >

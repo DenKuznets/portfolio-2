@@ -20,7 +20,7 @@ const NavBar: FC<NavBarProps> = ({ onClick }) => {
 
     return (
         <nav>
-            <ul>{listElements}</ul>
+            <ul bg-blue>{listElements}</ul>
         </nav>
     );
 };

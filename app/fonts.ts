@@ -1,14 +1,15 @@
-import { Merriweather_Sans, Raleway, League_Spartan } from "next/font/google";
+import { Merriweather, Raleway, League_Spartan } from "next/font/google";
 
 export const raleway = Raleway({
-    subsets: ["latin", "cyrillic"],
     variable: "--font-raleway",
+    subsets: ["latin", "cyrillic"],
 });
 export const leagueSpartan = League_Spartan({
-    subsets: ["latin"],
     variable: "--font-leaguespartan",
+    subsets: ["latin"],
 });
-export const merriweather = Merriweather_Sans({
-    subsets: ["cyrillic-ext", "latin"],
+export const merriweather = Merriweather({
     variable: "--font-merriweather",
+    subsets: ["cyrillic", "latin"],
+    weight: ["400", "700", "900"],
 });
