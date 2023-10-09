@@ -148,10 +148,10 @@ img, .small-icon, svg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: ${({ theme }) => theme.global.socialIconContainerBG};
 	border-radius: 50%;
-	color: ${({ theme }) => theme.global.socialIconContainerColor};
 	transition: all 0.3s ease;
+	color: ${({ theme }) => theme.global.socialIconContainerColor};
+	background-color: ${({ theme }) => theme.global.socialIconContainerBG};
 	&:hover{
 		transform: scale(1.2);
 	}
