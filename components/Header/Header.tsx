@@ -2,25 +2,32 @@ import { FC } from "react";
 import { smoothScroll } from "../../utils/functions";
 import NavBar from "../NavBar/NavBar";
 import Image from "next/image";
-import hamIcon from "../../public/images/burger-menu-svgrepo-com.svg";
+import logoIcon from "../../public/images/logo.png";
 
-export interface HeaderProps {
-  onClick: () => void;
-}
+export interface HeaderProps {}
 
-const Header: FC<HeaderProps> = ({ onClick }) => {
+const Header: FC<HeaderProps> = () => {
   return (
-    <div className="header">
-      <div className="header__logo">
-        <a href="#" onClick={() => smoothScroll()}>
-          <Image width={100} height={100} src="./images/logo.png" alt="" />
-          <div className="header__logo-text">ｄｅｎ . ｋｕｚｎｅｔｓ</div>
+    <div className="flex justify-between p-2 md:p-4">
+      <div>
+        <a
+          className="flex items-center text-inherit hover:no-underline"
+          href="#"
+          onClick={() => smoothScroll()}
+        >
+          <Image
+            className="mr-2"
+            width={50}
+            height={50}
+            src={logoIcon}
+            alt="html5 and hammer image"
+          />
+          <div className="font-bold">ｄｅｎ . ｋｕｚｎｅｔｓ</div>
         </a>
       </div>
-      <NavBar />
-      <button onClick={onClick}>
-        <Image width={30} height={30} src={hamIcon} alt="menu icon" />
-      </button>
+      <div className="max-md:hidden">
+        <NavBar />
+      </div>
     </div>
   );
 };
