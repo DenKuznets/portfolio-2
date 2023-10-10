@@ -25,19 +25,19 @@ const Hero = () => {
                 <h1 className="font-bold">
                     {text.hero.fname} {text.hero.lname}
                 </h1>
-                <div className="mt-1 flex items-center justify-end">
+                <div className="mt-1 flex items-center justify-end md:justify-start">
                     <hr className="mr-4 w-12 border-black md:w-20" />
-                    <span className="first-letter:capitalize">
+                    <span className="first-letter:capitalize md:text-2xl">
                         {text.hero.profession}
                     </span>
                 </div>
-                <p className="color-black-900 mt-10 text-center uppercase leading-normal">
+                <p className="color-black-900 mt-10 text-center  uppercase leading-normal">
                     {text.hero.stack}
                 </p>
 
                 <div
                     data-testid={hero_testids.hero_text_buttons}
-                    className="mt-14 flex flex-col items-center gap-4"
+                    className="mt-14 flex flex-col items-center gap-4 md:flex-row "
                 >
                     <a
                         className="flex w-fit items-center rounded-2xl border-none bg-violet px-10 py-5 text-base text-white"
@@ -89,7 +89,7 @@ const Hero = () => {
                 </div>
                 <div
                     data-testid={hero_testids.hero_text_socials}
-                    className="flex justify-center items-center mt-14"
+                    className="flex justify-center items-center mt-14 md:justify-start"
                 >
                     <span className="first-letter:capitalize">
                         {text.hero.socials}:
@@ -118,10 +118,13 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div data-testid={hero_testids.hero_image}>
+            <div
+                data-testid={hero_testids.hero_image}
+                className="max-lg:hidden"
+            >
                 <div className="hero__img-content">
                     <Image
-                        className="max-md:hidden"
+                        className=""
                         width={500}
                         height={500}
                         src={avatarPic}
