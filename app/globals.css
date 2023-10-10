@@ -39,7 +39,7 @@
 
   p {
     font-size: 0.8rem;
-    @apply text-gray-500;
+    @apply text-gray-800;
   }
 
   a {

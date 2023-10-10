@@ -18,7 +18,7 @@ const preview: Preview = {
 export const decorators = [
     (Story) => (
         <div
-            className={`scroll-pt-20 ${raleway.variable} ${merriweather.variable} ${leagueSpartan.variable}`}
+            className={`scroll-pt-20 ${raleway.variable} ${merriweather.variable} ${leagueSpartan.variable} font-serif`}
             lang="ru"
         >
             <div className={` text-almostBlack text-lg first-letter:uppercase`}>
