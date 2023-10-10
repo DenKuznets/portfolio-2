@@ -1,8 +1,7 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { smoothScroll } from "../../utils/functions";
 import NavBar from "../NavBar/NavBar";
 import Image from "next/image";
-import text from "../../utils/text";
 import hamIcon from "../../public/images/burger-menu-svgrepo-com.svg";
 
 export interface HeaderProps {
@@ -10,28 +9,7 @@ export interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ onClick }) => {
-  const [showMenu, setShowMenu] = useState(false);
-  const listElements = [];
-  //   const text = useLocalization().local;
-
-  for (const [key, value] of Object.entries(text.header.nav)) {
-    listElements.push(
-      <li key={key}>
-        <a
-          onClick={() => {
-            setShowMenu(!showMenu);
-            smoothScroll();
-          }}
-          href={`#${key}`}
-        >
-          {value}
-        </a>
-      </li>,
-    );
-  }
-
   return (
-    // <HeaderStyled>
     <div className="header">
       <div className="header__logo">
         <a href="#" onClick={() => smoothScroll()}>
@@ -41,16 +19,9 @@ const Header: FC<HeaderProps> = ({ onClick }) => {
       </div>
       <NavBar />
       <button onClick={onClick}>
-        <Image
-          width={30}
-          height={30}
-          //   src="./images/burger-menu-svgrepo-com.svg"
-          src={hamIcon}
-          alt="menu icon"
-        />
+        <Image width={30} height={30} src={hamIcon} alt="menu icon" />
       </button>
     </div>
-    // </HeaderStyled>
   );
 };
 
