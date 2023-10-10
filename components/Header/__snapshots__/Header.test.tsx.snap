@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders HEADER unchanged 1`] = `
+<div>
+  <div
+    class="flex justify-between p-2 md:p-4"
+    data-testid="header_container"
+  >
+    <div>
+      <a
+        class="flex items-center text-inherit hover:no-underline"
+        href="#"
+      >
+        <img
+          alt="html5 and hammer image"
+          class="mr-2"
+          data-nimg="1"
+          data-testid="header_logo_image"
+          decoding="async"
+          height="50"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
+          style="color: transparent;"
+          width="50"
+        />
+        <div
+          class="font-bold"
+          data-testid="header_logo_text"
+        >
+          ｄｅｎ . ｋｕｚｎｅｔｓ
+        </div>
+      </a>
+    </div>
+    <div
+      class="max-md:hidden"
+    >
+      <nav
+        data-testid="navbar_container"
+      >
+        <ul
+          class="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16"
+          data-testid="navbar_list"
+        >
+          <li
+            data-testid="navbar_list_item"
+          >
+            <a
+              href="#hero"
+            >
+              Обо мне
+            </a>
+          </li>
+          <li
+            data-testid="navbar_list_item"
+          >
+            <a
+              href="#work"
+            >
+              Примеры работ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+`;
