@@ -19,7 +19,7 @@ const Hero = () => {
     return (
         <div
             data-testid={hero_testids.hero_container}
-            className="flex flex-col items-center p-2 md:p-4"
+            className="flex flex-col items-center p-2 md:p-4 lg:grid lg:grid-cols-2 lg:justify-between"
         >
             <div data-testid={hero_testids.hero_text}>
                 <h1 className="font-bold">
@@ -118,11 +118,11 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div
+            {/* <div
                 data-testid={hero_testids.hero_image}
                 className="max-lg:hidden"
-            >
-                <div className="hero__img-content">
+            > */}
+                {/* <div className="hero__img-content"> */}
                     <Image
                         className=""
                         width={500}
@@ -130,8 +130,8 @@ const Hero = () => {
                         src={avatarPic}
                         alt=""
                     />
-                </div>
-            </div>
+                {/* </div> */}
+            {/* </div> */}
         </div>
     );
 };
