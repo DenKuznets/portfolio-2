@@ -13,4 +13,7 @@ test("renders correctly", () => {
   expect(listItems).toHaveLength(Object.keys(text.header.nav).length);
 });
 
-test("renders navbar unchanged", () => {});
+test("renders navbar unchanged", () => {
+  const { container } = render(<NavBar />);
+  expect(container).toMatchSnapshot();
+});
