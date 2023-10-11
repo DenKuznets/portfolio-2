@@ -4,11 +4,11 @@ import Link from 'next/link';
 import MyLink from '../MyLink/MyLink';
 import text from '../../utils/text';
 
-export interface SectionProps {
+export interface SectionProps{
     id: number;
 }
 
-const Section: FC<SectionProps> = ({ id }) => {
+const Section = ({ id }:SectionProps) => {
     const projText = projects.find((proj) => proj.id === id);
     return projText ? (
         <div className="container">
@@ -25,7 +25,9 @@ const Section: FC<SectionProps> = ({ id }) => {
             </ul>
             <Link href={projText.github}>Github</Link> |{' '}
             <Link href={projText.demo}>Demo</Link>
-            <MyLink>{text.showmore}</MyLink>
+            <div>
+                <MyLink className="">{text.showmore}</MyLink>
+            </div>
         </div>
     ) : (
         <div>project not found</div>
