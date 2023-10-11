@@ -5,22 +5,23 @@ import instIcon from '../../public/images/instagram-logo.svg';
 import gitIcon from '../../public/images/github-logo.svg';
 import avatarPic from '../../public/images/avatar-violet-bg.webp';
 import MyLink from '../MyLink/MyLink';
+import Link from 'next/link';
 
 export const hero_testids = {
-    hero_container: 'hero_container',
-    hero_text: 'hero_text',
-    hero_text_links: 'hero_text_links',
-    hero_text_socials: 'hero_text_socials',
-    hero_image: 'hero_image'
+    hero_container: 'hero_container'
 };
 
 const Hero = () => {
+    const socials = [
+        { link: 'https://www.instagram.com/denis_kyznecov/', icon: gitIcon },
+        { link: 'https://github.com/DenKuznets', icon: instIcon }
+    ];
     return (
         <div
             data-testid={hero_testids.hero_container}
             className="container mx-auto flex flex-col items-center p-2 md:p-4 lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
         >
-            <div data-testid={hero_testids.hero_text}>
+            <div>
                 <h1 className="font-bold">
                     {text.hero.fname} {text.hero.lname}
                 </h1>
@@ -34,51 +35,35 @@ const Hero = () => {
                     {text.hero.stack}
                 </p>
 
-                <div
-                    data-testid={hero_testids.hero_text_links}
-                    className="mt-14 flex flex-col items-center gap-4 md:flex-row "
-                >
+                <div className="mt-14 flex flex-col items-center gap-4 md:flex-row ">
                     <MyLink violet href="https://t.me/DenKuznets">
                         {text.hero.contactme}
                     </MyLink>
-                    <MyLink href="https://t.me/DenKuznets">
-                        {text.myWorks}
-                    </MyLink>
+                    <MyLink href="/allworks">{text.myWorks}</MyLink>
                 </div>
-                <div
-                    data-testid={hero_testids.hero_text_socials}
-                    className="flex justify-center items-center mt-14 md:justify-start"
-                >
+                <div className="flex justify-center items-center mt-14 md:justify-start">
                     <span className="first-letter:capitalize">
                         {text.hero.socials}:
                     </span>
-                    <div className="flex">
-                        <a href="https://www.instagram.com/denis_kyznecov/">
-                            <div className="social-icon-container">
+                    <div className="flex px-4 gap-6">
+                        {socials.map((obj) => (
+                            <Link
+                                className="hover:scale-125 transition-all"
+                                key={obj.link}
+                                href={obj.link}
+                            >
                                 <Image
                                     width={25}
                                     height={25}
-                                    src={instIcon}
-                                    alt="instagram-logo"
+                                    src={obj.icon}
+                                    alt={obj.link}
                                 />
-                            </div>
-                        </a>
-                        <a href="https://github.com/DenKuznets">
-                            <div className="social-icon-container">
-                                <Image
-                                    width={25}
-                                    height={25}
-                                    src={gitIcon}
-                                    alt="github-logo"
-                                />
-                            </div>
-                        </a>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
-
             <Image
-                data-testid={hero_testids.hero_image}
                 className="max-lg:hidden rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-[15px_15px_50px_rgba(0,0,0,0.2)]"
                 width={700}
                 height={900}

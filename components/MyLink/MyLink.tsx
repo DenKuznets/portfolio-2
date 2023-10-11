@@ -7,16 +7,16 @@ export interface MyLinkProps {
     href?: string;
 }
 
-const linkStyle =
-    'border-none outline-none transition-all hover:outline hover:outline-1 flex w-fit items-center rounded-2xl hover:outline-black  px-10 py-5 text-black  [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all';
+const normalStyle =
+    'hover:outline-black hover:outline-1 hover:outline outline-none';
 
 const violetStyle =
-    'bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0 outline-0 border-none';
+    'bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0';
 
 export const MyLink: FC<MyLinkProps> = ({ children, href = '#', violet }) => {
     return (
         <Link
-            className={` ${violet ? violetStyle : ''} ${linkStyle}`}
+            className={`border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all ${violet ? violetStyle: normalStyle}`}
             href={href}
         >
             {children}

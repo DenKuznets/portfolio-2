@@ -1,21 +1,24 @@
-// import { render, screen } from "@testing-library/react";
-// import Header, { header_testids } from "./Header";
-// import "@testing-library/jest-dom";
-// import { navbar_testids } from "../NavBar/NavBar";
+import { render, screen } from '@testing-library/react';
+import Hero, { hero_testids } from './Hero';
+import '@testing-library/jest-dom';
+import text from '@/utils/text';
 
-// test("renders correctly", () => {
-//   render(<Header />);
-//   const container = screen.getByTestId(header_testids.header_container);
-//   const logoImage = screen.getByTestId(header_testids.header_logo_image);
-//   const logoText = screen.getByTestId(header_testids.header_logo_text);
-//   const navbar = screen.getByTestId(navbar_testids.navbar_container);
-//   expect(container).toBeInTheDocument();
-//   expect(logoImage).toBeInTheDocument();
-//   expect(logoText).toBeInTheDocument();
-//   expect(navbar).toBeInTheDocument();
-// });
+test('renders correctly', () => {
+    render(<Hero />);
+    const container = screen.getByTestId(hero_testids.hero_container);
+    const h1 = screen.getByRole('heading', {level: 1})
+    const p = screen.getByText(text.hero.stack)
+    const telegramLink = screen.getByRole('link', { name: /связаться/i })
+    const allProjects = screen.getByRole('link', {  name: /мои проекты/i})
 
-// test("renders HEADER unchanged", () => {
-//   const { container } = render(<Header />);
+    expect(container).toBeInTheDocument();
+    expect(h1).toHaveTextContent(`${text.hero.fname} ${text.hero.lname}`)
+    expect(p).toBeInTheDocument();
+    expect(telegramLink).toHaveAttribute('href', 'https://t.me/DenKuznets')
+    expect(allProjects).toHaveAttribute('href', '/allworks')
+});
+
+// test("renders hero unchanged", () => {
+//   const { container } = render(<Hero />);
 //   expect(container).toMatchSnapshot();
 // });
