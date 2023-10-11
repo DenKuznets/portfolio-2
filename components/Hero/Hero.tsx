@@ -11,10 +11,10 @@ export const hero_testids = {
     hero_container: 'hero_container'
 };
 
-const Hero = () => {
+const Hero: FC = () => {
     const socials = [
-        { link: 'https://www.instagram.com/denis_kyznecov/', icon: gitIcon },
-        { link: 'https://github.com/DenKuznets', icon: instIcon }
+        { link: text.links.git, icon: gitIcon },
+        { link: text.links.inst, icon: instIcon }
     ];
     return (
         <div
@@ -36,7 +36,7 @@ const Hero = () => {
                 </p>
 
                 <div className="mt-14 flex flex-col items-center gap-4 md:flex-row ">
-                    <MyLink violet href="https://t.me/DenKuznets">
+                    <MyLink violet href={text.links.tg}>
                         {text.hero.contactme}
                     </MyLink>
                     <MyLink href="/allworks">{text.myWorks}</MyLink>

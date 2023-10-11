@@ -6,9 +6,7 @@ exports[`renders hero unchanged 1`] = `
     class="container mx-auto flex flex-col items-center p-2 md:p-4 lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
     data-testid="hero_container"
   >
-    <div
-      data-testid="hero_text"
-    >
+    <div>
       <h1
         class="font-bold"
       >
@@ -35,10 +33,9 @@ exports[`renders hero unchanged 1`] = `
       </p>
       <div
         class="mt-14 flex flex-col items-center gap-4 md:flex-row "
-        data-testid="hero_text_links"
       >
         <a
-          class=" bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0 outline-0 border-none border-none outline-none transition-all hover:outline hover:outline-1 flex w-fit items-center rounded-2xl hover:outline-black  px-10 py-5 text-black  [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all"
+          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0"
           href="https://t.me/DenKuznets"
         >
           Связаться
@@ -60,8 +57,8 @@ exports[`renders hero unchanged 1`] = `
           </svg>
         </a>
         <a
-          class="  border-none outline-none transition-all hover:outline hover:outline-1 flex w-fit items-center rounded-2xl hover:outline-black  px-10 py-5 text-black  [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all"
-          href="https://t.me/DenKuznets"
+          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none"
+          href="/allworks"
         >
           Мои проекты
           <svg
@@ -83,7 +80,6 @@ exports[`renders hero unchanged 1`] = `
       </div>
       <div
         class="flex justify-center items-center mt-14 md:justify-start"
-        data-testid="hero_text_socials"
       >
         <span
           class="first-letter:capitalize"
@@ -92,45 +88,39 @@ exports[`renders hero unchanged 1`] = `
           :
         </span>
         <div
-          class="flex"
+          class="flex px-4 gap-6"
         >
           <a
-            href="https://www.instagram.com/denis_kyznecov/"
-          >
-            <div
-              class="social-icon-container"
-            >
-              <img
-                alt="instagram-logo"
-                data-nimg="1"
-                decoding="async"
-                height="25"
-                loading="lazy"
-                src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
-                srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
-                style="color: transparent;"
-                width="25"
-              />
-            </div>
-          </a>
-          <a
+            class="hover:scale-125 transition-all"
             href="https://github.com/DenKuznets"
           >
-            <div
-              class="social-icon-container"
-            >
-              <img
-                alt="github-logo"
-                data-nimg="1"
-                decoding="async"
-                height="25"
-                loading="lazy"
-                src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
-                srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
-                style="color: transparent;"
-                width="25"
-              />
-            </div>
+            <img
+              alt="https://github.com/DenKuznets"
+              data-nimg="1"
+              decoding="async"
+              height="25"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+              style="color: transparent;"
+              width="25"
+            />
+          </a>
+          <a
+            class="hover:scale-125 transition-all"
+            href="https://www.instagram.com/denis_kyznecov/"
+          >
+            <img
+              alt="https://www.instagram.com/denis_kyznecov/"
+              data-nimg="1"
+              decoding="async"
+              height="25"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+              style="color: transparent;"
+              width="25"
+            />
           </a>
         </div>
       </div>
@@ -139,7 +129,6 @@ exports[`renders hero unchanged 1`] = `
       alt="man in yellow jacket"
       class="max-lg:hidden rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-[15px_15px_50px_rgba(0,0,0,0.2)]"
       data-nimg="1"
-      data-testid="hero_image"
       decoding="async"
       height="900"
       loading="lazy"
