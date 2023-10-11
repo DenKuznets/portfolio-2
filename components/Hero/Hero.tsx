@@ -19,7 +19,7 @@ const Hero: FC = () => {
     return (
         <div
             data-testid={hero_testids.hero_container}
-            className="container mx-auto flex flex-col items-center p-2 md:p-4 lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
+            className="container mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
         >
             <div>
                 <h1 className="font-bold">

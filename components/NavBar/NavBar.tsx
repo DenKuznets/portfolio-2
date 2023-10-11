@@ -17,7 +17,7 @@ const NavBar: FC<NavBarProps> = ({ onClick }) => {
   for (const [key, value] of Object.entries(text.header.nav)) {
     listElements.push(
       <li data-testid={navbar_testids.nabar_list_item} key={key}>
-        <a onClick={onClick} href={`#${key}`}>
+        <a className="text-gray-500 hover:text-almostBlack" onClick={onClick} href={`#${key}`}>
           {value}
         </a>
       </li>,

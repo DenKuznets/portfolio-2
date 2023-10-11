@@ -45,6 +45,7 @@ exports[`renders HEADER unchanged 1`] = `
             data-testid="navbar_list_item"
           >
             <a
+              class="text-gray-500 hover:text-almostBlack"
               href="#hero"
             >
               Обо мне
@@ -54,6 +55,7 @@ exports[`renders HEADER unchanged 1`] = `
             data-testid="navbar_list_item"
           >
             <a
+              class="text-gray-500 hover:text-almostBlack"
               href="#work"
             >
               Примеры работ
