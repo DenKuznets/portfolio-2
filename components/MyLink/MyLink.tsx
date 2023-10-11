@@ -8,15 +8,15 @@ export interface MyLinkProps {
 }
 
 const linkStyle =
-    'transition-all hover:border flex w-fit items-center rounded-2xl border-black  px-10 py-5 text-black  [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all';
+    'border-none outline-none transition-all hover:outline hover:outline-1 flex w-fit items-center rounded-2xl hover:outline-black  px-10 py-5 text-black  [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all';
 
 const violetStyle =
-    'bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 border-none';
+    'bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0 outline-0 border-none';
 
 export const MyLink: FC<MyLinkProps> = ({ children, href = '#', violet }) => {
     return (
         <Link
-            className={`${linkStyle} ${violet ? violetStyle : ''}`}
+            className={` ${violet ? violetStyle : ''} ${linkStyle}`}
             href={href}
         >
             {children}

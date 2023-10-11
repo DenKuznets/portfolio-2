@@ -4,6 +4,7 @@ import text from '../../utils/text';
 import instIcon from '../../public/images/instagram-logo.svg';
 import gitIcon from '../../public/images/github-logo.svg';
 import avatarPic from '../../public/images/avatar-violet-bg.webp';
+import MyLink from '../MyLink/MyLink';
 
 export const hero_testids = {
     hero_container: 'hero_container',
@@ -37,7 +38,12 @@ const Hero = () => {
                     data-testid={hero_testids.hero_text_links}
                     className="mt-14 flex flex-col items-center gap-4 md:flex-row "
                 >
-                    
+                    <MyLink violet href="https://t.me/DenKuznets">
+                        {text.hero.contactme}
+                    </MyLink>
+                    <MyLink href="https://t.me/DenKuznets">
+                        {text.myWorks}
+                    </MyLink>
                 </div>
                 <div
                     data-testid={hero_testids.hero_text_socials}
@@ -70,7 +76,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-          
+
             <Image
                 data-testid={hero_testids.hero_image}
                 className="max-lg:hidden rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-[15px_15px_50px_rgba(0,0,0,0.2)]"
