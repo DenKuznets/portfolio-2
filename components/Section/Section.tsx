@@ -50,7 +50,7 @@ const Section = ({ projectId }: SectionProps) => {
                 <Image
                     width={800}
                     height={600}
-                    src={`./images/works-preview/${projText.img}`}
+                    src={`/images/works-preview/${projText.img}`}
                     alt={`${projText.img}`}
                 />
             </Link>

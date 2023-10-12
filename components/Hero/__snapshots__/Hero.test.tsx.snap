@@ -35,7 +35,7 @@ exports[`renders hero unchanged 1`] = `
         class="mt-14 flex flex-col items-center gap-4 md:flex-row "
       >
         <a
-          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0"
+          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0 "
           href="https://t.me/DenKuznets"
         >
           Связаться
@@ -57,7 +57,7 @@ exports[`renders hero unchanged 1`] = `
           </svg>
         </a>
         <a
-          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none"
+          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none "
           href="/allworks"
         >
           Мои проекты

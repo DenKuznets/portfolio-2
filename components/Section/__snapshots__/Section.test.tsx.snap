@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Section unchanged 1`] = `
+<div>
+  <div
+    class="container lg:flex lg:gap-8 justify-between"
+  >
+    <div
+      data-testid="section_text"
+    >
+      <h3
+        class="font-bold leading-normal mb-4"
+      >
+        ROCK PAPER SCISSORS
+      </h3>
+      <ul
+        class="flex flex-wrap gap-3 items-center mb-4"
+      >
+        <li
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+        >
+          react
+        </li>
+        <li
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+        >
+          mui
+        </li>
+        <li
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+        >
+          ts
+        </li>
+        <li
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+        >
+          unit testing
+        </li>
+      </ul>
+      <a
+        href="https://github.com/DenKuznets/rock-paper-scissors"
+      >
+        Github
+      </a>
+       |
+       
+      <a
+        href="https://rock-paper-scissors-kappa-tawny.vercel.app/"
+      >
+        Demo
+      </a>
+      <a
+        class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none mt-4"
+        href="/allworks/1"
+      >
+        Подробнее
+        <svg
+          fill="none"
+          height="30px"
+          viewBox="0 0 24 24"
+          width="30px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 17L17 7M17 7H8M17 7V16"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+    </div>
+    <a
+      class="relative hidden md:block mt-8 shadow-2xl overflow-hidden lg:mt-0"
+      data-testid="section_image"
+      href="/allworks/1"
+    >
+      <img
+        alt="rpc.webp"
+        data-nimg="1"
+        decoding="async"
+        height="600"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75 2x"
+        style="color: transparent;"
+        width="800"
+      />
+    </a>
+  </div>
+</div>
+`;

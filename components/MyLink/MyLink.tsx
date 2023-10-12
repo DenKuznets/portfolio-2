@@ -14,7 +14,7 @@ const violetStyle =
 export const MyLink = ({className, children, href = '#', violet }:MyLinkProps) => {
     return (
         <Link
-            className={`border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all ${violet ? violetStyle: normalStyle} ${className}`}
+            className={`border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all ${violet ? violetStyle: normalStyle} ${className ? className : ""}`}
             href={href}
         >
             {children}

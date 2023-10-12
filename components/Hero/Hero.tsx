@@ -11,7 +11,7 @@ export const hero_testids = {
     hero_container: 'hero_container'
 };
 
-const Hero: FC = () => {
+const Hero = () => {
     const socials = [
         { link: text.links.git, icon: gitIcon },
         { link: text.links.inst, icon: instIcon }
