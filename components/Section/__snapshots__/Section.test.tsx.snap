@@ -9,7 +9,7 @@ exports[`renders Section unchanged 1`] = `
       <h3
         class="font-bold leading-normal mb-4"
       >
-        ROCK PAPER SCISSORS
+        rock paper scissors
       </h3>
       <ul
         class="flex flex-wrap gap-3 items-center mb-4"
@@ -74,7 +74,7 @@ exports[`renders Section unchanged 1`] = `
       href="/allworks/1"
     >
       <img
-        alt="ROCK PAPER SCISSORS project image"
+        alt="rock paper scissors project image"
         class="filter-none hover:saturate-200 transition-all duration-300"
         data-nimg="1"
         decoding="async"
