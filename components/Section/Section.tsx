@@ -44,7 +44,7 @@ const Section = ({ projectId }: SectionProps) => {
 
             <Link
                 data-testid={section_testids.section_image}
-                className="relative hidden md:block mt-8 shadow-2xl rounded overflow-hidden lg:mt-0"
+                className="relative hidden md:block mt-8 shadow-2xl overflow-hidden lg:mt-0"
                 href={`/allworks/${projectId}`}
             >
                 <Image
