@@ -5,9 +5,7 @@ exports[`renders Section unchanged 1`] = `
   <div
     class="container lg:flex lg:gap-8 justify-between"
   >
-    <div
-      data-testid="section_text"
-    >
+    <div>
       <h3
         class="font-bold leading-normal mb-4"
       >
@@ -73,11 +71,10 @@ exports[`renders Section unchanged 1`] = `
     </div>
     <a
       class="relative hidden md:block mt-8 shadow-2xl overflow-hidden lg:mt-0"
-      data-testid="section_image"
       href="/allworks/1"
     >
       <img
-        alt="rpc.webp"
+        alt="ROCK PAPER SCISSORS project image"
         data-nimg="1"
         decoding="async"
         height="600"
