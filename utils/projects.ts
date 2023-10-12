@@ -1,4 +1,16 @@
-export const projects = [
+export interface Project {
+    id: number;
+    name: string;
+    tech: string[];
+    img: string;
+    github: string;
+    demo: string;
+    description: string;
+};
+
+export const getProject = (id: number) => projects.find(proj => proj.id === id);
+
+export const projects: Project[] = [
     {
         id: 1,
         name: 'ROCK PAPER SCISSORS',

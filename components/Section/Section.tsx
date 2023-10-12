@@ -1,5 +1,5 @@
 import React, { MutableRefObject, useRef } from 'react';
-import { projects } from '../../utils/projects';
+import { projects, getProject } from '../../utils/projects';
 import Link from 'next/link';
 import MyLink from '../MyLink/MyLink';
 import text from '../../utils/text';
@@ -15,15 +15,15 @@ export const section_testids = {
 };
 
 const Section = ({ projectId }: SectionProps) => {
-    const projText = projects.find((proj) => proj.id === projectId);
-    return projText ? (
+    const project = getProject(projectId);
+    return project ? (
         <div className="container lg:flex lg:gap-8 justify-between">
             <div data-testid={section_testids.section_text}>
                 <h3 className="font-bold leading-normal mb-4">
-                    {projText.name}
+                    {project.name}
                 </h3>
                 <ul className="flex flex-wrap gap-3 items-center mb-4">
-                    {projText.tech.map((obj) => (
+                    {project.tech.map((obj) => (
                         <li
                             className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
                             key={obj}
@@ -32,8 +32,8 @@ const Section = ({ projectId }: SectionProps) => {
                         </li>
                     ))}
                 </ul>
-                <Link href={projText.github}>Github</Link> |{' '}
-                <Link href={projText.demo}>Demo</Link>
+                <Link href={project.github}>Github</Link> |{' '}
+                <Link href={project.demo}>Demo</Link>
                 <MyLink
                     href={`/allworks/${projectId}`}
                     className="mt-4"
@@ -50,8 +50,8 @@ const Section = ({ projectId }: SectionProps) => {
                 <Image
                     width={800}
                     height={600}
-                    src={`/images/works-preview/${projText.img}`}
-                    alt={`${projText.img}`}
+                    src={`/images/works-preview/${project.img}`}
+                    alt={`${project.img}`}
                 />
             </Link>
         </div>
