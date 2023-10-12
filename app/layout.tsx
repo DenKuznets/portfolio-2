@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { raleway, merriweather, leagueSpartan } from "./fonts";
+import React from "react";
 
 export const metadata: Metadata = {
     title: "Denis Kuznetsov | Frontend Developer",
@@ -18,7 +19,7 @@ export default function RootLayout({
             lang="ru"
         >
             <body
-                className={` text-almostBlack text-lg first-letter:uppercase`}
+                className={`p-0 relative text-almostBlack text-lg first-letter:uppercase`}
             >
                 {children}
             </body>

@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Image from 'next/image';
 import text from '../../utils/text';
 import instIcon from '../../public/images/instagram-logo.svg';
@@ -22,7 +21,7 @@ const Hero = () => {
             className="container mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
         >
             <div>
-                <h1 className="font-bold">
+                <h1 className="font-bold text-6xl">
                     {text.hero.fname} {text.hero.lname}
                 </h1>
                 <div className="mt-1 flex items-center justify-end md:justify-start">
