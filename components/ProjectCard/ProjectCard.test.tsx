@@ -1,16 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import ProjectCard from './ProjectCard';
 import '@testing-library/jest-dom';
+import { projects } from '@/utils/projects';
 
-const project = {
-    id: 1,
-    name: 'rock paper scissors',
-    tech: ['react', 'mui', 'ts', 'unit testing'],
-    img: 'rpc.webp',
-    github: 'https://github.com/DenKuznets/rock-paper-scissors',
-    demo: 'https://rock-paper-scissors-kappa-tawny.vercel.app/',
-    description: `Игра "Камень Ножницы Бумага" по дизайну https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH`
-};
+const project = projects[0];
 
 test('renders correctly', () => {
     render(<ProjectCard projectId={project.id} />);
