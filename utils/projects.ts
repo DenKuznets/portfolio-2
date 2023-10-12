@@ -6,7 +6,7 @@ export interface Project {
     github: string;
     demo: string;
     description: string;
-};
+}
 
 export const getProject = (id: number) => projects.find(proj => proj.id === id);
 
