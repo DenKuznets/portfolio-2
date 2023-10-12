@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import NavBar, {links} from "./NavBar";
 import "@testing-library/jest-dom";
-import text from "../../utils/text";
 
 
 test("renders correctly", () => {
