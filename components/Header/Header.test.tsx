@@ -10,7 +10,7 @@ test("renders correctly", () => {
   expect(navbar).toBeInTheDocument();
 });
 
-// test("renders HEADER unchanged", () => {
-//   const { container } = render(<Header />);
-//   expect(container).toMatchSnapshot();
-// });
+test("renders Header unchanged", () => {
+  const { container } = render(<Header />);
+  expect(container).toMatchSnapshot();
+});

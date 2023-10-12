@@ -67,3 +67,59 @@ exports[`renders HEADER unchanged 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders Header unchanged 1`] = `
+<div>
+  <header
+    class="top-0 z-10 flex w-full max-w-7xl justify-between p-2 shadow-md md:fixed md:p-4"
+  >
+    <a
+      class="flex items-center text-inherit hover:no-underline"
+      href="#"
+    >
+      <img
+        alt="html5 and hammer image"
+        class="mr-2"
+        data-nimg="1"
+        data-testid="header_logo_image"
+        decoding="async"
+        height="50"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=128&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=64&q=75 1x, /_next/image?url=%2Fimg.jpg&w=128&q=75 2x"
+        style="color: transparent;"
+        width="50"
+      />
+      <span
+        class="font-bold"
+      >
+        ｄｅｎ . ｋｕｚｎｅｔｓ
+      </span>
+    </a>
+    <nav
+      class="flex items-center max-md:hidden"
+    >
+      <ul
+        class="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16"
+      >
+        <li>
+          <a
+            class="text-gray-500 hover:text-almostBlack"
+            href="#hero"
+          >
+            Обо мне
+          </a>
+        </li>
+        <li>
+          <a
+            class="text-gray-500 hover:text-almostBlack"
+            href="#examples"
+          >
+            Примеры работ
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
