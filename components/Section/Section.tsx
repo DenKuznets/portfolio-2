@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef } from 'react';
+import React from 'react';
 import { getProject } from '../../utils/projects';
 import Link from 'next/link';
 import MyLink from '../MyLink/MyLink';
@@ -39,6 +39,7 @@ const Section = ({ projectId }: SectionProps) => {
                 href={`/allworks/${projectId}`}
             >
                 <Image
+                    className='filter-none hover:saturate-200 transition-all duration-300'
                     width={800}
                     height={600}
                     src={`/images/works-preview/${project.img}`}
