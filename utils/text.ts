@@ -5,16 +5,12 @@ const text = {
     backButton: 'Назад',
     myWorks: 'Мои проекты',
     allWorks: 'Все проекты',
+    examples: "Примеры работ",
+    aboutMe:"Обо мне",
     links: {
         inst: 'https://www.instagram.com/denis_kyznecov/',
         git: 'https://github.com/DenKuznets',
         tg: 'https://t.me/DenKuznets'
-    },
-    header: {
-        nav: {
-            hero: 'Обо мне',
-            work: 'Примеры работ'
-        }
     },
     hero: {
         fname: 'Денис',

@@ -1,12 +1,13 @@
 import { render, screen } from "@testing-library/react";
-import NavBar from "./NavBar";
+import NavBar, {links} from "./NavBar";
 import "@testing-library/jest-dom";
 import text from "../../utils/text";
+
 
 test("renders correctly", () => {
   render(<NavBar />);
   const listItems = screen.getAllByRole('listitem');
-  expect(listItems).toHaveLength(Object.keys(text.header.nav).length);
+  expect(listItems).toHaveLength(links.length);
 });
 
 test("renders navbar unchanged", () => {
