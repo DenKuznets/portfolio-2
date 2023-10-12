@@ -34,10 +34,7 @@ const Section = ({ projectId }: SectionProps) => {
                 </ul>
                 <Link href={project.github}>Github</Link> |{' '}
                 <Link href={project.demo}>Demo</Link>
-                <MyLink
-                    href={`/allworks/${projectId}`}
-                    className="mt-4"
-                >
+                <MyLink href={`/allworks/${projectId}`} className="mt-4">
                     {text.showmore}
                 </MyLink>
             </div>
@@ -51,7 +48,7 @@ const Section = ({ projectId }: SectionProps) => {
                     width={800}
                     height={600}
                     src={`/images/works-preview/${project.img}`}
-                    alt={`${project.img}`}
+                    alt={`${project.name} project image`}
                 />
             </Link>
         </div>
