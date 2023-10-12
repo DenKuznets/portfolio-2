@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React from 'react';
 
 export interface MyLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     violet?: boolean;

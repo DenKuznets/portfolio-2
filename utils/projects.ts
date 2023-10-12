@@ -13,7 +13,7 @@ export const getProject = (id: number) => projects.find(proj => proj.id === id);
 export const projects: Project[] = [
     {
         id: 1,
-        name: 'ROCK PAPER SCISSORS',
+        name: 'rock paper scissors',
         tech: ['react', 'mui', 'ts', 'unit testing'],
         img: 'rpc.webp',
         github: 'https://github.com/DenKuznets/rock-paper-scissors',

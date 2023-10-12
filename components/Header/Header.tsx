@@ -1,8 +1,8 @@
-import { FC } from "react";
 import { smoothScroll } from "../../utils/functions";
 import Image from "next/image";
 import logoIcon from "../../public/images/logo.png";
 import NavBar from "../NavBar/NavBar";
+import Link from "next/link";
 
 export const header_testids = {
   header_container: "header_container",
@@ -11,16 +11,16 @@ export const header_testids = {
   header_logo_text: "header_logo_text",
 };
 
-const Header: FC = () => {
+const Header = () => {
   return (
     <div
       data-testid={header_testids.header_container}
       className="top-0 z-10 flex w-full max-w-7xl justify-between p-2 shadow-md md:fixed md:p-4"
     >
-      <a
+      <Link
         className="flex items-center text-inherit hover:no-underline"
         href="#"
-        onClick={() => smoothScroll()}
+        // onClick={() => smoothScroll()}
       >
         <Image
           data-testid={header_testids.header_logo_image}
@@ -36,7 +36,7 @@ const Header: FC = () => {
         >
           ｄｅｎ . ｋｕｚｎｅｔｓ
         </div>
-      </a>
+      </Link>
 
       <div
         data-testid={header_testids.header_navbar_container}
