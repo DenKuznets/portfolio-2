@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import text from "../../utils/text";
+import Link from "next/link";
 
-export interface NavBarProps {
-  onClick?: () => void;
+export interface NavBarProps extends React.HTMLAttributes<HTMLDivElement> {
+  handleLinkClick?: () => void;
 }
 
 export const navbar_testids = {
@@ -11,16 +12,20 @@ export const navbar_testids = {
   nabar_list_item: "navbar_list_item",
 };
 
-const NavBar: FC<NavBarProps> = ({ onClick }) => {
+const NavBar = ({ handleLinkClick} : NavBarProps) => {
   const listElements = [];
 
   for (const [key, value] of Object.entries(text.header.nav)) {
     listElements.push(
-      <li data-testid={navbar_testids.nabar_list_item} key={key}>
-        <a className="text-gray-500 hover:text-almostBlack" onClick={onClick} href={`#${key}`}>
-          {value}
-        </a>
-      </li>,
+        <li data-testid={navbar_testids.nabar_list_item} key={key}>
+            <Link
+                className="text-gray-500 hover:text-almostBlack"
+                onClick={handleLinkClick}
+                href={`#${key}`}
+            >
+                {value}
+            </Link>
+        </li>
     );
   }
 
