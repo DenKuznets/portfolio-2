@@ -39,7 +39,7 @@ const Hero = () => {
                     <MyLink violet href={text.links.tg}>
                         {text.hero.contactme}
                     </MyLink>
-                    <MyLink href="/allworks">{text.myWorks}</MyLink>
+                    <MyLink className='whitespace-nowrap' href="/allworks">{text.myWorks}</MyLink>
                 </div>
                 <div className="flex justify-center items-center mt-14 md:justify-start">
                     <span className="first-letter:capitalize">

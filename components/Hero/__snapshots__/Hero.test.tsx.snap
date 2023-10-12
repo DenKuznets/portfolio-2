@@ -57,7 +57,7 @@ exports[`renders hero unchanged 1`] = `
           </svg>
         </a>
         <a
-          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none "
+          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none whitespace-nowrap"
           href="/allworks"
         >
           Мои проекты
