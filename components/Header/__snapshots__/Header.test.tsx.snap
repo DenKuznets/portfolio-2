@@ -3,7 +3,7 @@
 exports[`renders Header unchanged 1`] = `
 <div>
   <header
-    class="top-0 z-10 flex w-full max-w-7xl justify-between p-2 shadow-md md:fixed md:p-4"
+    class="w-full top-0 z-10 shadow-md md:fixed md:p-4 flex justify-between p-2 "
   >
     <a
       class="flex items-center text-inherit hover:no-underline"
