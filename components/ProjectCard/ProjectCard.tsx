@@ -13,7 +13,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
 
     return project ? (
         <Link
-            className={`container [&>img]:hover:blur-xl shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[30rem] relative ${
+            className={`container [&>img]:hover:saturate-200 shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[30rem] relative ${
                 className ? className : ''
             }`}
             href={`/allworks/${projectId}`}
