@@ -10,11 +10,11 @@ export default function Home() {
         <div>
             <Header />
             <main className="pt-8 flex flex-col">
-                <Hero />
+                {/* <Hero />
                 <h2 className='text-3xl font-bold text-center my-14'>{text.header.nav.work}</h2>
                 <Section className='bg-violet text-white' projectId={1} />
                 <Section projectId={2} />
-                <Section projectId={3} />
+                <Section projectId={3} /> */}
             </main>
         </div>
     );
