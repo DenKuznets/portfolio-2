@@ -11,10 +11,10 @@ const normalStyle =
 const violetStyle =
     'bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0';
 
-export const MyLink = ({ children, href = '#', violet }:MyLinkProps) => {
+export const MyLink = ({className, children, href = '#', violet }:MyLinkProps) => {
     return (
         <Link
-            className={`border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all ${violet ? violetStyle: normalStyle}`}
+            className={`border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all ${violet ? violetStyle: normalStyle} ${className}`}
             href={href}
         >
             {children}
