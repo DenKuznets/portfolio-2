@@ -9,10 +9,11 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
     projectId: number;
 }
 
-const Section = ({className, projectId }: SectionProps) => {
+const Section = ({ className, projectId }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
         <div
+            data-testid="section"
             className={`container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${
                 className ? className : ''
             }`}
