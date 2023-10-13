@@ -30,7 +30,7 @@ const Hero = () => {
                         {text.hero.profession}
                     </span>
                 </div>
-                <p className="color-black-900 mt-10 text-center  uppercase leading-normal">
+                <p className="color-black-900 mt-10 text-center md:text-start  uppercase leading-normal">
                     {text.hero.stack}
                 </p>
 
