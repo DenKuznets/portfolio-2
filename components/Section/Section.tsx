@@ -29,7 +29,7 @@ const Section = ({className, projectId }: SectionProps) => {
                 </ul>
                 <Link href={project.github}>Github</Link> |{' '}
                 <Link href={project.demo}>Demo</Link>
-                <MyLink href={`/allworks/${projectId}`} className="mt-4">
+                <MyLink href={`/allworks/${projectId}`} className="mt-4 hover:outline-inherit">
                     {text.showmore}
                 </MyLink>
             </div>
@@ -39,7 +39,7 @@ const Section = ({className, projectId }: SectionProps) => {
                 href={`/allworks/${projectId}`}
             >
                 <Image
-                    className='filter-none hover:saturate-200 transition-all duration-300'
+                    className='filter-none hover:saturate-150 transition-all duration-300'
                     width={800}
                     height={600}
                     src={`/images/works-preview/${project.img}`}

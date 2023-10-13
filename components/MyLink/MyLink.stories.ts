@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { MyLink, MyLinkProps } from './MyLink';
+import { MyLink } from './MyLink';
 
 const meta = {
     title: 'MyLink',
@@ -18,11 +18,5 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         children: 'Default link'
-    }
-};
-export const Violet: Story = {
-    args: {
-        children: 'Violet link',
-        violet: true
     }
 };
