@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
     return (
         <html
-            className={`scroll-pt-20 ${raleway.variable} ${merriweather.variable} ${leagueSpartan.variable} font-serif`}
+            className={`scroll-smooth scroll-pt-20 ${raleway.variable} ${merriweather.variable} ${leagueSpartan.variable} font-serif`}
             lang="ru"
         >
             <body
