@@ -21,7 +21,7 @@ const Hero = () => {
             className="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 max-w-[1920px]"
         >
             <div>
-                <h1 className="font-bold text-6xl">
+                <h1 className="font-bold text-5xl sm:text-6xl">
                     {text.hero.fname} {text.hero.lname}
                 </h1>
                 <div className="mt-1 flex items-center justify-end md:justify-start">
