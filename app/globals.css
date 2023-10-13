@@ -31,37 +31,15 @@
     }
 
     h3 {
-        font-size: 1.7rem;
+        @apply text-3xl;
     }
 
     p {
-        font-size: 0.8rem;
-        @apply text-gray-800;
+        @apply text-gray-800 text-sm sm:text-base;
     }
 
     a {
-        /* @apply text-gray-500; */
-        text-decoration: none;
-        transition: all 0.2s;
-        cursor: pointer;
-        @apply font-serif;
-    }
-
-    a:hover {
-        opacity: 1;
-        text-decoration: underline;
-        /* color: theme(colors.almostBlack); */
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    section {
-        padding: 0 1em;
-        width: 100%;
+        @apply font-serif hover:underline;
     }
 
     img,
@@ -72,11 +50,5 @@
         -khtml-user-select: none;
         -webkit-user-select: none;
         -o-user-select: none;
-    }
-
-    @media screen(mobileL) {
-        p {
-            font-size: 1rem;
-        }
     }
 }
