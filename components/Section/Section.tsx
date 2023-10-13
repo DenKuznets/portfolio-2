@@ -9,7 +9,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
     projectId: number;
 }
 
-const Section = ({ projectId }: SectionProps) => {
+const Section = ({className, projectId }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
         <div className="container lg:flex lg:gap-8 justify-between">
