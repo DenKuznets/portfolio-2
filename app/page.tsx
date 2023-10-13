@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import MyLink from '@/components/MyLink/MyLink';
@@ -21,6 +22,7 @@ export default function Home() {
                 <Section className="bg-customYellow" projectId={3} />
                 <MyLink className='mx-auto my-8 font-bold' href="/allworks">{text.allWorks}</MyLink>
             </main>
+            <Footer/>
         </>
     );
 }
