@@ -10,11 +10,15 @@ test('renders correctly', () => {
     const hero = screen.getByTestId(hero_testids.hero_container);
     const examplesh2 = screen.getByRole('heading', { level: 2 });
     const sections = screen.getAllByTestId('section');
+    const allProjectsLink = screen.getByRole('link', {
+        name: text.allWorks
+    });
 
     expect(header).toBeInTheDocument();
     expect(hero).toBeInTheDocument();
     expect(examplesh2).toHaveTextContent(text.examples);
     expect(sections).toHaveLength(3);
+    expect(allProjectsLink).toHaveAttribute('href', '/allworks');
 });
 
 test('renders Home unchanged', () => {

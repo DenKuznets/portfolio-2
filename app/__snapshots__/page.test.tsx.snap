@@ -472,6 +472,28 @@ exports[`renders Home unchanged 1`] = `
         />
       </a>
     </div>
+    <a
+      class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            mx-auto my-8 font-bold"
+      href="/allworks"
+    >
+      Все проекты
+      <svg
+        class="fill-current"
+        height="30px"
+        style="stroke: currentColor;"
+        viewBox="0 0 24 24"
+        width="30px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 17L17 7M17 7H8M17 7V16"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
+    </a>
   </main>
 </div>
 `;
