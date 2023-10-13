@@ -11,7 +11,7 @@ export default function Home() {
                 <Hero />
                 <h2
                     id="examples"
-                    className="container font-bold text-center mt-4 sm:mt-8 underline py-10"
+                    className="container font-bold text-center mt-4 sm:mt-8 underline py-10 text-3xl sm:text-4xl"
                 >
                     {text.examples}
                 </h2>
