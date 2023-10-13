@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header className="w-full top-0 z-10 shadow-md md:fixed md:p-4 flex justify-between p-2 ">
+        <header className="w-full top-0 z-10 shadow-md md:fixed md:p-4 flex justify-between p-2 bg-white">
             <Link
                 className="flex items-center text-inherit hover:no-underline"
                 href="#"
