@@ -3,7 +3,7 @@
 exports[`renders hero unchanged 1`] = `
 <div>
   <div
-    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 max-w-[1920px]"
+    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 uhd:max-w-[1920px]"
     data-testid="hero_container"
   >
     <div>
@@ -35,7 +35,8 @@ exports[`renders hero unchanged 1`] = `
         class="mt-14 flex flex-col items-center gap-4 md:flex-row "
       >
         <a
-          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 hover:outline-0 "
+          class="hover:outline-inherit hover:outline-1 hover:outline outline-none text-inherit text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            bg-violet text-white hover:text-amber-400 [&>svg]:hover:fill-amber-400 [&&]:hover:outline-none"
           href="https://t.me/DenKuznets"
         >
           Связаться
@@ -57,20 +58,21 @@ exports[`renders hero unchanged 1`] = `
           </svg>
         </a>
         <a
-          class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none whitespace-nowrap"
+          class="hover:outline-inherit hover:outline-1 hover:outline outline-none text-inherit text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            whitespace-nowrap"
           href="/allworks"
         >
           Мои проекты
           <svg
-            fill="none"
+            class="fill-current"
             height="30px"
             viewBox="0 0 24 24"
             width="30px"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+              class="stroke-current"
               d="M7 17L17 7M17 7H8M17 7V16"
-              stroke="#000000"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"

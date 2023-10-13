@@ -3,11 +3,11 @@
 exports[`renders Section unchanged 1`] = `
 <div>
   <div
-    class="container lg:flex lg:gap-8 justify-between"
+    class="container lg:flex lg:gap-8 justify-between "
   >
     <div>
       <h3
-        class="font-bold leading-normal mb-4"
+        class="font-bold leading-normal mb-4 first-letter:capitalize"
       >
         rock paper scissors
       </h3>
@@ -15,22 +15,22 @@ exports[`renders Section unchanged 1`] = `
         class="flex flex-wrap gap-3 items-center mb-4"
       >
         <li
-          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
         >
           react
         </li>
         <li
-          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
         >
           mui
         </li>
         <li
-          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
         >
           ts
         </li>
         <li
-          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
         >
           unit testing
         </li>
@@ -48,20 +48,21 @@ exports[`renders Section unchanged 1`] = `
         Demo
       </a>
       <a
-        class="border-none transition-all flex w-fit items-center rounded-2xl  px-10 py-5 text-black [&>svg]:hover:rotate-45 [&>svg]:ml-2 [&>svg]:transition-all hover:outline-black hover:outline-1 hover:outline outline-none mt-4"
+        class="hover:outline-inherit hover:outline-1 hover:outline outline-none text-inherit text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            mt-4 hover:outline-inherit"
         href="/allworks/1"
       >
         Подробнее
         <svg
-          fill="none"
+          class="fill-current"
           height="30px"
           viewBox="0 0 24 24"
           width="30px"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            class="stroke-current"
             d="M7 17L17 7M17 7H8M17 7V16"
-            stroke="#000000"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
@@ -75,7 +76,7 @@ exports[`renders Section unchanged 1`] = `
     >
       <img
         alt="rock paper scissors project image"
-        class="filter-none hover:saturate-200 transition-all duration-300"
+        class="filter-none hover:saturate-150 transition-all duration-300"
         data-nimg="1"
         decoding="async"
         height="600"
