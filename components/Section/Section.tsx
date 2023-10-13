@@ -14,13 +14,13 @@ const Section = ({className, projectId }: SectionProps) => {
     return project ? (
         <div className={`container lg:flex lg:gap-8 justify-between ${className ? className : ""}`}>
             <div>
-                <h3 className="font-bold leading-normal mb-4">
+                <h3 className="font-bold leading-normal mb-4 first-letter:capitalize">
                     {project.name}
                 </h3>
                 <ul className="flex flex-wrap gap-3 items-center mb-4">
                     {project.tech.map((obj) => (
                         <li
-                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-black border"
+                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
                             key={obj}
                         >
                             {obj}
