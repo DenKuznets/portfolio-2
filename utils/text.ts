@@ -1,5 +1,3 @@
-import CATEGORIES from './categories';
-
 const text = {
     showmore: 'Подробнее',
     backButton: 'Назад',

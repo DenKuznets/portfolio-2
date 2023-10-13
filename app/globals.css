@@ -3,83 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-sans;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 1.7rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-    @apply text-gray-800;
-  }
-
-  a {
-    /* @apply text-gray-500; */
-    text-decoration: none;
-    transition: all 0.2s;
-    cursor: pointer;
-    @apply font-serif;
-  }
-
-  a:hover {
-    opacity: 1;
-    text-decoration: underline;
-    /* color: theme(colors.almostBlack); */
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  section {
-    padding: 0 1em;
-    width: 100%;
-  }
-
-  img,
-  .small-icon,
-  svg {
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-  }
-
-  @media screen(mobileL) {
-    h1 {
-      /* font-size: 4.5rem; */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-sans;
     }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
     p {
-      font-size: 1rem;
+        font-size: 0.8rem;
+        @apply text-gray-800;
     }
-  }
+
+    a {
+        /* @apply text-gray-500; */
+        text-decoration: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        @apply font-serif;
+    }
+
+    a:hover {
+        opacity: 1;
+        text-decoration: underline;
+        /* color: theme(colors.almostBlack); */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    img,
+    .small-icon,
+    svg {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+    }
+
+    @media screen(mobileL) {
+        p {
+            font-size: 1rem;
+        }
+    }
 }
