@@ -12,7 +12,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
 const Section = ({className, projectId }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
-        <div className={`container lg:flex lg:gap-8 justify-between ${className ? className : ""}`}>
+        <div className={`container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${className ? className : ""}`}>
             <div>
                 <h3 className="font-bold leading-normal mb-4 first-letter:capitalize">
                     {project.name}
@@ -20,7 +20,7 @@ const Section = ({className, projectId }: SectionProps) => {
                 <ul className="flex flex-wrap gap-3 items-center mb-4">
                     {project.tech.map((obj) => (
                         <li
-                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-inherit border"
+                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border"
                             key={obj}
                         >
                             {obj}

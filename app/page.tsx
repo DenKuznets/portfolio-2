@@ -13,8 +13,8 @@ export default function Home() {
                     {text.examples}
                 </h2>
                 <Section className="bg-violet text-white" projectId={1} />
-                {/* 
                 <Section projectId={2} />
+                {/* 
                 <Section projectId={3} /> */}
             </main>
         </>
