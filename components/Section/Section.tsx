@@ -12,7 +12,11 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
 const Section = ({className, projectId }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
-        <div className={`container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${className ? className : ""}`}>
+        <div
+            className={`container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${
+                className ? className : ''
+            }`}
+        >
             <div>
                 <h3 className="font-bold leading-normal mb-4 first-letter:capitalize">
                     {project.name}
@@ -27,19 +31,27 @@ const Section = ({className, projectId }: SectionProps) => {
                         </li>
                     ))}
                 </ul>
-                <Link className='text-sm sm:text-lg' href={project.github}>Github</Link> |{' '}
-                <Link className='text-sm sm:text-lg' href={project.demo}>Demo</Link>
-                <MyLink href={`/allworks/${projectId}`} className="mt-4 mb-4 lg:mb-0 hover:outline-inherit">
+                <Link className="text-sm sm:text-lg" href={project.github}>
+                    Github
+                </Link>{' '}
+                |{' '}
+                <Link className="text-sm sm:text-lg" href={project.demo}>
+                    Demo
+                </Link>
+                <MyLink
+                    href={`/allworks/${projectId}`}
+                    className="mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+                >
                     {text.showmore}
                 </MyLink>
             </div>
 
             <Link
-                className="relative mt-8 shadow-2xl overflow-hidden lg:mt-0"
+                className="relative mt-8 lg:mt-0"
                 href={`/allworks/${projectId}`}
             >
                 <Image
-                    className='filter-none hover:saturate-150 transition-all duration-300'
+                    className="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
                     width={800}
                     height={600}
                     src={`/images/works-preview/${project.img}`}
