@@ -3,7 +3,7 @@
 exports[`renders hero unchanged 1`] = `
 <div>
   <div
-    class="container mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
+    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 max-w-[1920px]"
     data-testid="hero_container"
   >
     <div>
@@ -27,7 +27,7 @@ exports[`renders hero unchanged 1`] = `
         </span>
       </div>
       <p
-        class="color-black-900 mt-10 text-center  uppercase leading-normal"
+        class="color-black-900 mt-10 text-center md:text-start  uppercase leading-normal"
       >
         СТЭК: react, ts, mui, styled-components, redux, rest, graphql (apollo-client), jest, react-testing-library, storybook
       </p>
