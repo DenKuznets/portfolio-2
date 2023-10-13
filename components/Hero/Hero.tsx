@@ -48,8 +48,8 @@ const Hero = () => {
                         {text.myWorks}
                     </MyLink>
                 </div>
-                <div className="flex justify-center items-center mt-14 md:justify-start">
-                    <span className="first-letter:capitalize">
+                <div className="flex justify-center items-center mt-8 md:mt-14 md:justify-start">
+                    <span className="first-letter:capitalize text-sm sm:text-lg">
                         {text.hero.socials}:
                     </span>
                     <div className="flex px-4 gap-6">

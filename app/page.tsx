@@ -9,12 +9,12 @@ export default function Home() {
             <Header />
             <main className=" uhd:max-w-[1920px] mx-auto pt-8 flex flex-col">
                 <Hero />
-                <h2 id='examples' className="container font-bold text-center mt-8 bg-violet text-white py-10">
+                <h2 id='examples' className="container font-bold text-center mt-4 sm:mt-8 bg-violet text-white py-10">
                     {text.examples}
                 </h2>
                 <Section className="bg-violet text-white" projectId={1} />
                 <Section projectId={2} />
-                <Section projectId={3} />
+                <Section className='bg-customYellow' projectId={3} />
                 
             </main>
         </>

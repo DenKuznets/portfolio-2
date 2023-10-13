@@ -33,9 +33,9 @@ const config: Config = {
             colors: {
                 violet: '#6344C6',
                 darkViolet: '#262439',
-                yellow: '#FFC448',
+                customYellow: '#FFC448',
                 almostBlack: '#11141D',
-                orange: '#F26440',
+                customOrange: '#F26440',
                 pTextColor: 'grey',
                 aTextColor: 'grey'
             },

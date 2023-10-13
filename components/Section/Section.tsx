@@ -20,22 +20,22 @@ const Section = ({className, projectId }: SectionProps) => {
                 <ul className="flex flex-wrap gap-3 items-center mb-4">
                     {project.tech.map((obj) => (
                         <li
-                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border"
+                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
                             key={obj}
                         >
                             {obj}
                         </li>
                     ))}
                 </ul>
-                <Link href={project.github}>Github</Link> |{' '}
-                <Link href={project.demo}>Demo</Link>
-                <MyLink href={`/allworks/${projectId}`} className="mt-4 hover:outline-inherit">
+                <Link className='text-sm sm:text-lg' href={project.github}>Github</Link> |{' '}
+                <Link className='text-sm sm:text-lg' href={project.demo}>Demo</Link>
+                <MyLink href={`/allworks/${projectId}`} className="mt-4 mb-4 lg:mb-0 hover:outline-inherit">
                     {text.showmore}
                 </MyLink>
             </div>
 
             <Link
-                className="relative hidden md:block mt-8 shadow-2xl overflow-hidden lg:mt-0"
+                className="relative mt-8 shadow-2xl overflow-hidden lg:mt-0"
                 href={`/allworks/${projectId}`}
             >
                 <Image
