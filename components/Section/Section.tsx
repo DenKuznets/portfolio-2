@@ -12,7 +12,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
 const Section = ({className, projectId }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
-        <div className="container lg:flex lg:gap-8 justify-between">
+        <div className={`container lg:flex lg:gap-8 justify-between ${className ? className : ""}`}>
             <div>
                 <h3 className="font-bold leading-normal mb-4">
                     {project.name}
