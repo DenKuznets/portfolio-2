@@ -84,7 +84,7 @@ exports[`renders Home unchanged 1`] = `
         <p
           class="color-black-900 mt-10 text-center md:text-start  uppercase leading-normal"
         >
-          СТЭК: react, ts, mui, styled-components, redux, rest, graphql (apollo-client), jest, react-testing-library, storybook
+          СТЭК: react, nextjs, ts, mui, tailwind, styled-components, redux, rest, graphql, jest, react-testing-library, storybook
         </p>
         <div
           class="mt-14 flex flex-col items-center gap-4 md:flex-row "

@@ -1,14 +1,11 @@
-import Burger from '@/components/Burger/Burger';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import MyLink from '@/components/MyLink/MyLink';
 import Section from '@/components/Section/Section';
 import text from '@/utils/text';
-import { useState } from 'react';
 
 export default function Home() {
-    const [showMenu, setShowMenu] = useState(false);
     return (
         <>
             <Header />
@@ -27,8 +24,7 @@ export default function Home() {
                     {text.allWorks}
                 </MyLink>
             </main>
-            <Footer />
-            <Burger onClickCapture={() => setShowMenu(true)} />
+            <Footer />            
         </>
     );
 }
