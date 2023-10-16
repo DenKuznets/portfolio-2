@@ -29,7 +29,7 @@ const Header = () => {
             </Link>
 
             <NavBar
-                handleClick={() => setShowMenu(!showMenu)}
+                handleClick={() => setShowMenu(false)}
                 className={`transition-all duration-200 ${
                     showMenu ? 'left-0 top-0' : 'left-[-100vh] '
                 }`}
