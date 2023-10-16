@@ -24,7 +24,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
                 src={`/images/works-preview/${project.img}`}
                 alt={`${project.name} project image`}
             />
-            <h4 className="shadow-xl font-bold text-white p-4 absolute top-0 left-0 bg-zinc-900/[.75] w-full">
+            <h4 className="first-letter:capitalize shadow-xl font-bold text-white p-4 absolute top-0 left-0 bg-zinc-900/[.75] w-full">
                 {project.name}
             </h4>
             <ul className="absolute bottom-0 left-0 flex px-4 flex-wrap gap-3 items-center mb-4">
