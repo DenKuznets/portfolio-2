@@ -23,7 +23,7 @@ exports[`renders Home unchanged 1`] = `
         width="50"
       />
       <span
-        class="font-bold"
+        class="font-bold text-sm"
       >
         ｄｅｎ . ｋｕｚｎｅｔｓ
       </span>
@@ -52,6 +52,37 @@ exports[`renders Home unchanged 1`] = `
         </li>
       </ul>
     </nav>
+    <button
+      aria-label="Hamburger Menu"
+      class="fixed right-6 top-6 sm:hidden z-50"
+    >
+      <div
+        class="w-6 cursor-pointer transition-all ease duration-300"
+      >
+        <div
+          class="relative"
+        >
+          <span
+            class="absolute top-0 inline-block w-full h-0.5 bg-almostBlack rounded transition-all ease duration-200"
+            style="transform: rotate(0deg) translateY(6px);"
+          >
+             
+          </span>
+          <span
+            class="absolute top-0 inline-block w-full h-0.5 bg-almostBlack rounded transition-all ease duration-200"
+            style="opacity: 1;"
+          >
+             
+          </span>
+          <span
+            class="absolute top-0 inline-block w-full h-0.5 bg-almostBlack rounded transition-all ease duration-200"
+            style="transform: rotate(0deg) translateY(-6px);"
+          >
+             
+          </span>
+        </div>
+      </div>
+    </button>
   </header>
   <main
     class=" uhd:max-w-[1920px] mx-auto pt-8 flex flex-col"
