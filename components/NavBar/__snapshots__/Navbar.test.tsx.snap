@@ -2,7 +2,9 @@
 
 exports[`renders navbar unchanged 1`] = `
 <div>
-  <nav>
+  <nav
+    class="max-md:hidden "
+  >
     <ul
       class="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16"
     >

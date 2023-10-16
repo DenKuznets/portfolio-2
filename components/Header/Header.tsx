@@ -19,8 +19,6 @@ const Header = () => {
             >
                 <Image
                     className="mr-2 h-full w-auto"
-                    // width={50}
-                    // height={50}
                     sizes="(max-width: 768px) 5vw, 8vw"
                     src={logoIcon}
                     alt="html5 and hammer image"
@@ -30,7 +28,7 @@ const Header = () => {
                 </span>
             </Link>
 
-            <NavBar className="flex items-center max-md:hidden" />
+            <NavBar />
 
             <Burger
                 className="fixed right-6 top-4 sm:hidden z-50 "

@@ -13,7 +13,7 @@ export const links = [
 
 const NavBar = ({className, handleLinkClick }: NavBarProps) => {
     return (
-        <nav className={className}>
+        <nav className={`max-md:hidden ${className? className:""}`}>
             <ul className="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16">
                 {links.map((link) => (
                     <li key={link.url}>
