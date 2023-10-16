@@ -14,7 +14,6 @@ export const links = [
 const NavBar = ({ className, handleClick }: NavBarProps) => {
     const closeNav = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
         if (e.target instanceof HTMLElement && e.target.tagName === "NAV" && handleClick) {
-            console.log(e.target.tagName);
             handleClick();
         }
     };
