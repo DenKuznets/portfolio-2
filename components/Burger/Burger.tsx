@@ -9,10 +9,10 @@ export interface BurgerProps
     isOpen?: boolean;
 }
 
-const Burger = ({ handleClick, isOpen = false }: BurgerProps) => {
+const Burger = ({ className, handleClick, isOpen = false }: BurgerProps) => {
     return (
         <button
-            className="fixed right-6 top-6 sm:hidden z-50"
+            className={`${className? className : ""}`}
             onClick={handleClick}
             aria-label="Hamburger Menu"
         >

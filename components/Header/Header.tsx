@@ -18,18 +18,25 @@ const Header = () => {
                 href="#"
             >
                 <Image
-                    className="mr-2"
-                    width={50}
-                    height={50}
+                    className="mr-2 h-full w-auto"
+                    // width={50}
+                    // height={50}
+                    sizes="(max-width: 768px) 5vw, 8vw"
                     src={logoIcon}
                     alt="html5 and hammer image"
                 />
-                <span className="font-bold text-sm">ｄｅｎ . ｋｕｚｎｅｔｓ</span>
+                <span className="font-bold text-sm sm:text-lg whitespace-nowrap">
+                    ｄｅｎ . ｋｕｚｎｅｔｓ
+                </span>
             </Link>
 
             <NavBar className="flex items-center max-md:hidden" />
 
-            <Burger isOpen={showMenu} handleClick={()=> setShowMenu(!showMenu)} />
+            <Burger
+                className="fixed right-6 top-4 sm:hidden z-50 "
+                isOpen={showMenu}
+                handleClick={() => setShowMenu(!showMenu)}
+            />
         </header>
     );
 };
