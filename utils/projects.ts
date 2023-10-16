@@ -8,13 +8,36 @@ export interface Project {
     description: string;
 }
 
-export const getProject = (id: number) => projects.find(proj => proj.id === id);
+export const getProject = (id: number) =>
+    projects.find((proj) => proj.id === id);
+
+export const techList = {
+    REACT: 'REACT',
+    NEXTJS: 'NEXTJS',
+    TAILWIND: 'TAILWIND',
+    TS: 'TS',
+    MUI: 'MUI',
+    REDUX: 'REDUX',
+    REST: 'REST',
+    GRAPHQL: 'GRAPHQL',
+    JEST: 'JEST',
+    STORYBOOK: 'STORYBOOK',
+    REACT_TESTING_LIBRARY: 'REACT-TESTING-LIBRARY',
+    STYLED_COMPONENTS: 'STYLED-COMPONENTS',
+    CLASSIC:"HTML CSS JS"
+};
 
 export const projects: Project[] = [
     {
         id: 1,
         name: 'rock paper scissors',
-        tech: ['react', 'mui', 'ts', 'unit testing'],
+        tech: [
+            techList.REACT,
+            techList.MUI,
+            techList.TS,
+            techList.JEST,
+            techList.REACT_TESTING_LIBRARY
+        ],
         img: 'rpc.webp',
         github: 'https://github.com/DenKuznets/rock-paper-scissors',
         demo: 'https://rock-paper-scissors-kappa-tawny.vercel.app/',
@@ -23,7 +46,7 @@ export const projects: Project[] = [
     {
         id: 2,
         name: 'коммерческий сайт',
-        tech: ['html', 'scss', 'javascript', 'адаптивная верстка'],
+        tech: [techList.CLASSIC],
         img: 'tes.webp',
         github: 'https://github.com/DenKuznets/tes.loc',
         demo: 'https://tul-energo-service.ru/',
@@ -32,7 +55,7 @@ export const projects: Project[] = [
     {
         id: 3,
         name: 'тестовое задание',
-        tech: ['react', 'styled-components', 'адаптивная верстка', 'axios'],
+        tech: [techList.REACT, techList.STYLED_COMPONENTS, techList.REST],
         img: 'test1.webp',
         github: 'https://github.com/DenKuznets/dls-test',
         demo: 'https://dls-test.vercel.app/',
@@ -49,7 +72,7 @@ export const projects: Project[] = [
     {
         id: 4,
         name: 'тестовое задание для web-студии',
-        tech: ['react', 'styled-components', 'адаптивная верстка'],
+        tech: [techList.REACT, techList.STYLED_COMPONENTS],
         img: 'webstudio.webp',
         github: 'https://github.com/DenKuznets/testovoe-alexmedia',
         demo: 'https://denkuznets.github.io/testovoe-alexmedia/',
@@ -65,7 +88,7 @@ export const projects: Project[] = [
     {
         id: 5,
         name: 'портфолио',
-        tech: ['react', 'styled-components', 'typescript', 'react-router'],
+        tech: [techList.REACT, techList.STYLED_COMPONENTS, techList.TS],
         img: 'portfolio.webp',
         github: 'https://github.com/DenKuznets/masha-portfolio',
         demo: 'http://davinchushka.vercel.app/',
@@ -74,7 +97,7 @@ export const projects: Project[] = [
     {
         id: 6,
         name: 'квиз',
-        tech: ['react', 'api', 'styled-components'],
+        tech: [techList.REACT, techList.REST, techList.STYLED_COMPONENTS],
         img: 'quizz.webp',
         github: 'https://github.com/DenKuznets/quizzical-app',
         demo: 'https://denkuznets.github.io/quizzical-app/',
@@ -83,7 +106,7 @@ export const projects: Project[] = [
     {
         id: 7,
         name: 'компонент диаграмма расходов',
-        tech: ['react', 'typescript', 'styled-components'],
+        tech: [techList.REACT, techList.TS, techList.STYLED_COMPONENTS],
         img: 'component.webp',
         github: 'https://github.com/DenKuznets/Expenses-chart-component',
         demo: 'https://denkuznets.github.io/Expenses-chart-component/',
@@ -92,7 +115,7 @@ export const projects: Project[] = [
     {
         id: 8,
         name: 'коммерческий сайт',
-        tech: ['html', 'scss', 'javascript', 'адаптивная верстка'],
+        tech: [techList.CLASSIC],
         img: 'tehavto.webp',
         github: 'https://github.com/DenKuznets/teh-avto.loc',
         demo: 'https://avtodom-techauto.ru/',
@@ -101,7 +124,7 @@ export const projects: Project[] = [
     {
         id: 9,
         name: 'коммерческий сайт',
-        tech: ['html', 'scss', 'javascript', 'адаптивная верстка'],
+        tech: [techList.CLASSIC],
         img: 'bmk.webp',
         github: 'https://github.com/DenKuznets/bmk-new.loc',
         demo: 'https://bmk78.ru/',
@@ -110,7 +133,7 @@ export const projects: Project[] = [
     {
         id: 10,
         name: 'коммерческий сайт',
-        tech: ['html', 'scss', 'javascript', 'адаптивная верстка'],
+        tech: [techList.CLASSIC],
         img: 'cleaning.webp',
         github: 'https://github.com/DenKuznets/cleaning-chistulya.loc',
         demo: 'https://chistylya.ru/',
@@ -119,7 +142,7 @@ export const projects: Project[] = [
     {
         id: 11,
         name: 'коммерческий сайт',
-        tech: ['html', 'scss', 'javascript', 'адаптивная верстка'],
+        tech: [techList.CLASSIC],
         img: 'myp.webp',
         github: 'https://github.com/DenKuznets/myp-comfort',
         demo: 'https://mup-komfort.ru/',
@@ -128,7 +151,7 @@ export const projects: Project[] = [
     {
         id: 12,
         name: 'мое портфолио',
-        tech: ['react', 'styled-components', 'js'],
+        tech: [techList.NEXTJS, techList.TS, techList.TAILWIND],
         img: 'myportfolio.webp',
         github: 'https://github.com/DenKuznets/portfolio',
         demo: 'https://denkuznets.vercel.app/',
