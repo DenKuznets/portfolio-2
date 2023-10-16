@@ -20,7 +20,7 @@ const Hero = () => {
         <div
             data-testid={hero_testids.hero_container}
             id='#hero'
-            className="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
+            className="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
         >
             <div>
                 <h1 className="font-bold text-5xl sm:text-6xl">

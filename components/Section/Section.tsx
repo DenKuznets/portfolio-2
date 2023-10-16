@@ -14,7 +14,7 @@ const Section = ({ className, projectId }: SectionProps) => {
     return project ? (
         <div
             data-testid="section"
-            className={`container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${
+            className={`container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${
                 className ? className : ''
             }`}
         >

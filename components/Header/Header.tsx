@@ -31,7 +31,7 @@ const Header = () => {
             <NavBar
                 handleClick={() => setShowMenu(false)}
                 className={`transition-all duration-200 ${
-                    showMenu ? 'left-0 top-0' : 'left-[-100vh] '
+                    showMenu ? 'left-0 top-0' : 'left-[-100vw] '
                 }`}
             />
 
