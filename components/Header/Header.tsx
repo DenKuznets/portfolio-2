@@ -28,7 +28,12 @@ const Header = () => {
                 </span>
             </Link>
 
-            <NavBar />
+            <NavBar
+                handleClick={() => setShowMenu(!showMenu)}
+                className={`transition-all duration-200 ${
+                    showMenu ? 'left-0 top-0' : 'left-[-100vh] '
+                }`}
+            />
 
             <Burger
                 className="fixed right-6 top-4 sm:hidden z-50 "
