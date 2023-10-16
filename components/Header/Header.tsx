@@ -19,7 +19,7 @@ const Header = () => {
             >
                 <Image
                     className="mr-2 h-full w-auto"
-                    sizes="(max-width: 768px) 5vw, 8vw"
+                    sizes="(max-width: 768px) 20px, 30px"
                     src={logoIcon}
                     alt="html5 and hammer image"
                 />
@@ -36,7 +36,7 @@ const Header = () => {
             />
 
             <Burger
-                className="fixed right-6 top-4 sm:hidden z-50 "
+                className="fixed right-6 top-4 sm:top-5 md:hidden z-50 "
                 isOpen={showMenu}
                 handleClick={() => setShowMenu(!showMenu)}
             />

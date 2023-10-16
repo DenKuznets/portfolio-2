@@ -3,10 +3,10 @@
 exports[`renders navbar unchanged 1`] = `
 <div>
   <nav
-    class="max-md:hidden "
+    class="fixed md:static z-10 min-w-full md:min-w-fit bg-white/40 md:flex "
   >
     <ul
-      class="flex items-center justify-center gap-y-10 text-center font-serif max-md:min-h-screen max-md:flex-col max-md:text-[2rem] md:gap-x-16"
+      class="flex-col w-[70vw] md:w-fit px-8 md:px-0 bg-white flex items-center justify-center gap-y-10 text-center font-serif min-h-screen md:min-w-0 md:min-h-fit md:shadow-none md:flex-row md:justify-end text-2xl md:text-xl shadow-lg md:gap-x-16 "
     >
       <li>
         <a
