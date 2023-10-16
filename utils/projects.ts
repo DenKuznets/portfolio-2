@@ -162,7 +162,7 @@ export const projects: Project[] = [
     {
         id: 13,
         name: "drag'n'drop на react",
-        tech: ['react', 'redux-toolkit'],
+        tech: [techList.REACT, techList.REDUX],
         img: 'dnd.webp',
         github: 'https://github.com/DenKuznets/react-dnd',
         demo: 'https://react-dnd-ten.vercel.app/',
