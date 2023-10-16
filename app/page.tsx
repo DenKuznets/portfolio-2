@@ -24,7 +24,7 @@ export default function Home() {
                     {text.allWorks}
                 </MyLink>
             </main>
-            <Footer />            
+            <Footer />
         </>
     );
 }
