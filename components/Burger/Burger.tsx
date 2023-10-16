@@ -1,22 +1,18 @@
-import Image from 'next/image';
+import { burger } from '@/utils/svgs';
 import React from 'react';
-import hamIcon from '../../public/images/burger-menu-svgrepo-com.svg';
 
 export interface BurgerProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    handleClick: () => void;
+    handleClick?: () => void;
 }
 
 const Burger = ({ handleClick }: BurgerProps) => {
     return (
-        <button onClick={handleClick}>
-            <Image
-                className="relative md:hidden"
-                width={30}
-                height={30}
-                src={hamIcon}
-                alt="menu icon"
-            />
+        <button
+            onClick={handleClick}
+            className="fixed right-2 top-3 transition-all hover:text-violet"
+        >
+            {burger}
         </button>
     );
 };
