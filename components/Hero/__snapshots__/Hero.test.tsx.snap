@@ -3,7 +3,7 @@
 exports[`renders hero unchanged 1`] = `
 <div>
   <div
-    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
+    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
     data-testid="hero_container"
     id="#hero"
   >
@@ -62,7 +62,7 @@ exports[`renders hero unchanged 1`] = `
         <a
           class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
             whitespace-nowrap text-black"
-          href="/allworks"
+          href="/projects"
         >
           Мои проекты
           <svg

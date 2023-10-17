@@ -44,7 +44,7 @@ const Hero = () => {
                     >
                         {text.hero.contactme}
                     </MyLink>
-                    <MyLink  className="whitespace-nowrap text-black" href="/allworks">
+                    <MyLink  className="whitespace-nowrap text-black" href="/projects">
                         {text.myWorks}
                     </MyLink>
                 </div>

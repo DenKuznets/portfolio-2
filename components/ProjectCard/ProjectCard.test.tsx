@@ -13,7 +13,7 @@ test('renders correctly', () => {
     const listItems = screen.getAllByRole('listitem');
 
     expect(header).toHaveTextContent(project?.name);
-    expect(link).toHaveAttribute('href', `/allworks/${project.id}`);
+    expect(link).toHaveAttribute('href', `/projects/${project.id}`);
     expect(img).toBeInTheDocument();
     expect(listItems).toHaveLength(project.tech.length);
 });

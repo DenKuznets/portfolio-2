@@ -1,16 +1,17 @@
 import { projects as projectsList } from '@/utils/projects';
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
+import ProjectsLayout from './layout';
 
-const projects = () => {
+const ProjectsPage = ({ params }) => {
     return (
-        <div>
-            <div className='flex flex-col gap-8'>
+        <ProjectsLayout>
+            <div className="flex flex-col gap-8">
                 {projectsList.map((proj) => (
                     <ProjectCard key={proj.id} projectId={proj.id} />
                 ))}
             </div>
-        </div>
+        </ProjectsLayout>
     );
 };
 
-export default projects;
+export default ProjectsPage;

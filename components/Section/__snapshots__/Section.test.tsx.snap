@@ -3,7 +3,7 @@
 exports[`renders Section unchanged 1`] = `
 <div>
   <div
-    class="container lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between "
+    class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between "
     data-testid="section"
   >
     <div>
@@ -18,22 +18,27 @@ exports[`renders Section unchanged 1`] = `
         <li
           class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
         >
-          react
+          REACT
         </li>
         <li
           class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
         >
-          mui
+          MUI
         </li>
         <li
           class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
         >
-          ts
+          TS
         </li>
         <li
           class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
         >
-          unit testing
+          JEST
+        </li>
+        <li
+          class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+        >
+          REACT-TESTING-LIBRARY
         </li>
       </ul>
       <a
@@ -54,7 +59,7 @@ exports[`renders Section unchanged 1`] = `
       <a
         class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
             mt-4 mb-4 lg:mb-0 hover:outline-inherit"
-        href="/allworks/1"
+        href="/projects/1"
       >
         Подробнее
         <svg
@@ -76,7 +81,7 @@ exports[`renders Section unchanged 1`] = `
     </div>
     <a
       class="relative mt-8 lg:mt-0"
-      href="/allworks/1"
+      href="/projects/1"
     >
       <img
         alt="rock paper scissors project image"

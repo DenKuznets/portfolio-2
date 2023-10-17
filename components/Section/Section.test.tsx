@@ -19,7 +19,7 @@ test('renders correctly', () => {
     expect(listItems).toHaveLength(project.tech.length);
     expect(gitLink).toHaveAttribute('href', project.github);
     expect(demoLink).toHaveAttribute('href', project.demo);
-    expect(showmoreLink).toHaveAttribute('href', `/allworks/${project.id}`);
+    expect(showmoreLink).toHaveAttribute('href', `/projects/${project.id}`);
     expect(img).toBeInTheDocument();
 });
 

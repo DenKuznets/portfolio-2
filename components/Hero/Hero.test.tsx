@@ -17,7 +17,7 @@ test('renders correctly', () => {
     expect(h1).toHaveTextContent(`${text.hero.fname} ${text.hero.lname}`);
     expect(p).toBeInTheDocument();
     expect(telegramLink).toHaveAttribute('href', 'https://t.me/DenKuznets');
-    expect(allProjects).toHaveAttribute('href', '/allworks');
+    expect(allProjects).toHaveAttribute('href', '/projects');
     expect(gitLink).toHaveAttribute('href', text.links.git);
     expect(instLink).toHaveAttribute('href', text.links.inst);
 });

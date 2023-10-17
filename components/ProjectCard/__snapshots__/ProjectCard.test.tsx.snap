@@ -4,7 +4,7 @@ exports[`renders ProjectCard unchanged 1`] = `
 <div>
   <a
     class="container [&>img]:hover:saturate-200 shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[30rem] relative "
-    href="/allworks/1"
+    href="/projects/1"
   >
     <img
       alt="rock paper scissors project image"
@@ -18,7 +18,7 @@ exports[`renders ProjectCard unchanged 1`] = `
       style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
     />
     <h4
-      class="shadow-xl font-bold text-white p-4 absolute top-0 left-0 bg-zinc-900/[.75] w-full"
+      class="first-letter:capitalize shadow-xl font-bold text-white p-4 absolute top-0 left-0 bg-zinc-900/[.75] w-full"
     >
       rock paper scissors
     </h4>
@@ -28,22 +28,27 @@ exports[`renders ProjectCard unchanged 1`] = `
       <li
         class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
       >
-        react
+        REACT
       </li>
       <li
         class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
       >
-        mui
+        MUI
       </li>
       <li
         class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
       >
-        ts
+        TS
       </li>
       <li
         class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
       >
-        unit testing
+        JEST
+      </li>
+      <li
+        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
+      >
+        REACT-TESTING-LIBRARY
       </li>
     </ul>
   </a>

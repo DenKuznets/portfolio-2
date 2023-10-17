@@ -18,7 +18,7 @@ test('renders correctly', () => {
     expect(hero).toBeInTheDocument();
     expect(examplesh2).toHaveTextContent(text.examples);
     expect(sections).toHaveLength(3);
-    expect(allProjectsLink).toHaveAttribute('href', '/allworks');
+    expect(allProjectsLink).toHaveAttribute('href', '/projects');
 });
 
 test('renders Home unchanged', () => {
