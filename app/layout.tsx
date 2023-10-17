@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { raleway, merriweather, leagueSpartan } from "./fonts";
 import React from "react";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
     title: "Denis Kuznetsov | Frontend Developer",
@@ -21,7 +23,9 @@ export default function RootLayout({
             <body
                 className={`p-0 relative text-almostBlack text-lg first-letter:uppercase`}
             >
+            <Header />
                 {children}
+            <Footer />
             </body>
         </html>
     );

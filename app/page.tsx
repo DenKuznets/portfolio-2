@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
+// import Footer from '@/components/Footer/Footer';
+// import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import MyLink from '@/components/MyLink/MyLink';
 import Section from '@/components/Section/Section';
@@ -8,7 +8,7 @@ import text from '@/utils/text';
 export default function Home() {
     return (
         <>
-            <Header />
+            
             <main className=" uhd:max-w-[1920px] mx-auto pt-8 flex flex-col">
                 <Hero />
                 <h2
@@ -24,7 +24,7 @@ export default function Home() {
                     {text.allWorks}
                 </MyLink>
             </main>
-            <Footer />
+            
         </>
     );
 }
