@@ -4,6 +4,7 @@ import Link from 'next/link';
 import MyLink from '../MyLink/MyLink';
 import text from '../../utils/text';
 import Image from 'next/image';
+import replaceURL from '@/utils/replaceURL';
 
 export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
     projectId: number;
@@ -41,7 +42,7 @@ const Section = ({ className, projectId, description }: SectionProps) => {
                     Demo
                 </Link>
                 {description ? (
-                    <div>{project.description}</div>
+                    <div>{replaceURL(project.description)}</div>
                 ) : (
                     <MyLink
                         href={`/projects/${projectId}`}
