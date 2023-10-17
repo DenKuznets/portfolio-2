@@ -7,9 +7,10 @@ import Image from 'next/image';
 
 export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
     projectId: number;
+    description?: boolean;
 }
 
-const Section = ({ className, projectId }: SectionProps) => {
+const Section = ({ className, projectId, description }: SectionProps) => {
     const project = getProject(projectId);
     return project ? (
         <div
@@ -39,12 +40,16 @@ const Section = ({ className, projectId }: SectionProps) => {
                 <Link className="text-sm sm:text-lg" href={project.demo}>
                     Demo
                 </Link>
-                <MyLink
-                    href={`/projects/${projectId}`}
-                    className="mt-4 mb-4 lg:mb-0 hover:outline-inherit"
-                >
-                    {text.showmore}
-                </MyLink>
+                {description ? (
+                    <div>{project.description}</div>
+                ) : (
+                    <MyLink
+                        href={`/projects/${projectId}`}
+                        className="mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+                    >
+                        {text.showmore}
+                    </MyLink>
+                )}
             </div>
 
             <Link
