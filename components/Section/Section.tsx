@@ -42,7 +42,7 @@ const Section = ({ className, projectId, description }: SectionProps) => {
                     Demo
                 </Link>
                 {description ? (
-                    <div>{replaceURL(project.description)}</div>
+                    <p className='break-words py-8'>{replaceURL(project.description)}</p>
                 ) : (
                     <MyLink
                         href={`/projects/${projectId}`}
