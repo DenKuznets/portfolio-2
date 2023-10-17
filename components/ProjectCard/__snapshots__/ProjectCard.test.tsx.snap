@@ -50,6 +50,11 @@ exports[`renders ProjectCard unchanged 1`] = `
       >
         REACT-TESTING-LIBRARY
       </li>
+      <li
+        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
+      >
+        STORYBOOK
+      </li>
     </ul>
   </a>
 </div>
