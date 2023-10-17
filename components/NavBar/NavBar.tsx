@@ -7,8 +7,8 @@ export interface NavBarProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const links = [
-    { text: text.aboutMe, url: '#hero' },
-    { text: text.examples, url: '#examples' }
+    { text: text.aboutMe, url: '/#hero' },
+    { text: text.examples, url: '/#examples' }
 ];
 
 const NavBar = ({ className, handleClick }: NavBarProps) => {
