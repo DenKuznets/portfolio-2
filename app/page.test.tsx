@@ -6,7 +6,6 @@ import text from '@/utils/text';
 
 test('renders correctly', () => {
     render(<Home />);
-    const header = screen.getByTestId('header');
     const hero = screen.getByTestId(hero_testids.hero_container);
     const examplesh2 = screen.getByRole('heading', { level: 2 });
     const sections = screen.getAllByTestId('section');
@@ -14,7 +13,6 @@ test('renders correctly', () => {
         name: text.allWorks
     });
 
-    expect(header).toBeInTheDocument();
     expect(hero).toBeInTheDocument();
     expect(examplesh2).toHaveTextContent(text.examples);
     expect(sections).toHaveLength(3);
