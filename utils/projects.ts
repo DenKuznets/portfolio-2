@@ -39,7 +39,6 @@ export const projects: Project[] = [
             techList.react,
             techList.mui,
             techList.ts,
-            techList.rest,
             techList.rtl,
             techList.storybook
         ],
