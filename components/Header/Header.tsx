@@ -15,7 +15,7 @@ const Header = () => {
         >
             <Link
                 className="flex items-center text-inherit hover:no-underline"
-                href="#"
+                href="/"
             >
                 <Image
                     className="mr-2 h-full w-auto"
