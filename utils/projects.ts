@@ -19,7 +19,7 @@ export const techList = {
     MUI: 'MUI',
     REDUX: 'REDUX',
     REST: 'REST',
-    GRAPHQL: 'GRAPHQL',
+    // GRAPHQL: 'GRAPHQL',
     JEST: 'JEST',
     STORYBOOK: 'STORYBOOK',
     REACT_TESTING_LIBRARY: 'REACT-TESTING-LIBRARY',
@@ -36,7 +36,8 @@ export const projects: Project[] = [
             techList.MUI,
             techList.TS,
             techList.JEST,
-            techList.REACT_TESTING_LIBRARY
+            techList.REACT_TESTING_LIBRARY,
+            techList.STORYBOOK
         ],
         img: 'rpc.webp',
         github: 'https://github.com/DenKuznets/rock-paper-scissors',
@@ -151,7 +152,7 @@ export const projects: Project[] = [
     {
         id: 12,
         name: 'мое портфолио',
-        tech: [techList.NEXTJS, techList.TS, techList.TAILWIND],
+        tech: [techList.NEXTJS, techList.TS, techList.TAILWIND, techList.STORYBOOK],
         img: 'myportfolio.webp',
         github: 'https://github.com/DenKuznets/portfolio',
         demo: 'https://denkuznets.vercel.app/',
