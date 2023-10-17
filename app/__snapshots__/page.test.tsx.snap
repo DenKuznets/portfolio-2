@@ -146,7 +146,7 @@ exports[`renders Home unchanged 1`] = `
       />
     </div>
     <h2
-      class="container font-bold text-center mt-4 sm:mt-8 underline py-10 text-3xl sm:text-4xl"
+      class="bg-violet text-white container font-bold text-center mt-4 sm:mt-8 underline py-10 text-3xl sm:text-4xl"
       id="examples"
     >
       Примеры работ

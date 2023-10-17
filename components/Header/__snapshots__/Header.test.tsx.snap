@@ -8,7 +8,7 @@ exports[`renders Header unchanged 1`] = `
   >
     <a
       class="flex items-center text-inherit hover:no-underline"
-      href="#"
+      href="/"
     >
       <img
         alt="html5 and hammer image"
@@ -30,7 +30,7 @@ exports[`renders Header unchanged 1`] = `
       </span>
     </a>
     <nav
-      class="fixed md:static z-10 min-w-full md:min-w-fit bg-white/40 md:flex transition-all duration-200 left-[-100vh] "
+      class="fixed md:static z-10 min-w-full md:min-w-fit bg-white/40 md:flex transition-all duration-200 left-[-100vw] "
     >
       <ul
         class="flex-col w-[70vw] md:w-fit px-8 md:px-0 bg-white flex items-center justify-center gap-y-10 text-center font-serif min-h-screen md:min-w-0 md:min-h-fit md:shadow-none md:flex-row md:justify-end text-2xl md:text-xl shadow-lg md:gap-x-16 "
@@ -38,7 +38,7 @@ exports[`renders Header unchanged 1`] = `
         <li>
           <a
             class="text-gray-500 hover:text-almostBlack"
-            href="#hero"
+            href="/#hero"
           >
             Обо мне
           </a>
@@ -46,7 +46,7 @@ exports[`renders Header unchanged 1`] = `
         <li>
           <a
             class="text-gray-500 hover:text-almostBlack"
-            href="#examples"
+            href="/#examples"
           >
             Примеры работ
           </a>

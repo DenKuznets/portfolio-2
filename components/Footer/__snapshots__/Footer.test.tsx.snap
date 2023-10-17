@@ -3,7 +3,7 @@
 exports[`renders footer unchanged 1`] = `
 <div>
   <div
-    class="container flex justify-center gap-12 py-6 bg-almostBlack"
+    class="container flex justify-center gap-12 py-2 sm:py-6 bg-almostBlack"
   >
     <a
       class="hover:scale-125 transition-all text-white"

@@ -11,7 +11,7 @@ exports[`renders navbar unchanged 1`] = `
       <li>
         <a
           class="text-gray-500 hover:text-almostBlack"
-          href="#hero"
+          href="/#hero"
         >
           Обо мне
         </a>
@@ -19,7 +19,7 @@ exports[`renders navbar unchanged 1`] = `
       <li>
         <a
           class="text-gray-500 hover:text-almostBlack"
-          href="#examples"
+          href="/#examples"
         >
           Примеры работ
         </a>
