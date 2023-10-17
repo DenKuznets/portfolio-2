@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { projects } from '../../utils/projects';
 import Image from 'next/image';
+import text from '@/utils/text';
 
 export interface ProjectCardProps
     extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -16,7 +17,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
             className={`container [&>img]:hover:saturate-200 shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[30rem] relative ${
                 className ? className : ''
             }`}
-            href={`/projects/project/${projectId}`}
+            href={`${text.links.project}${projectId}`}
         >
             <Image
                 className="transition-all duration-300 blur-sm object-cover"

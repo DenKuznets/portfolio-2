@@ -3,12 +3,13 @@ const text = {
     backButton: 'Назад',
     myWorks: 'Мои проекты',
     allWorks: 'Все проекты',
-    examples: "Примеры работ",
-    aboutMe:"Обо мне",
+    examples: 'Примеры работ',
+    aboutMe: 'Обо мне',
     links: {
         inst: 'https://www.instagram.com/denis_kyznecov/',
         git: 'https://github.com/DenKuznets',
-        tg: 'https://t.me/DenKuznets'
+        tg: 'https://t.me/DenKuznets',
+        project: '/projects/'
     },
     hero: {
         fname: 'Денис',
@@ -18,7 +19,7 @@ const text = {
         stack: 'СТЭК: react, nextjs, ts, mui, tailwind, styled-components, redux, rest, graphql, jest, react-testing-library, storybook',
         contactme: 'Связаться',
         socials: 'я в соц сетях'
-    },
+    }
 };
 
 export default text;

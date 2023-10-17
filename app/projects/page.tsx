@@ -9,7 +9,6 @@ type Props = {
 };
 
 const page = ({ searchParams }: Props) => {
-    console.log('searchparams', searchParams);
     return (
         <div className="pt-8">
             <div className="flex flex-wrap gap-x-4 gap-y-2">
