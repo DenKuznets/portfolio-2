@@ -5,6 +5,7 @@ const text = {
     allWorks: 'Все проекты',
     examples: 'Примеры работ',
     aboutMe: 'Обо мне',
+    all:'Все',
     links: {
         inst: 'https://www.instagram.com/denis_kyznecov/',
         git: 'https://github.com/DenKuznets',
