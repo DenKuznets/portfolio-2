@@ -1,8 +1,7 @@
 import Section from "@/components/Section/Section"
-import { StaticParamsType } from "../page";
 
 
-const Project = ({ params }: StaticParamsType) => {
+const Project = ({ params }: {params:{id:string}}) => {
     return <Section description={true} projectId={parseInt(params.id)} />;
 };
 

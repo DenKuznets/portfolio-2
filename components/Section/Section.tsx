@@ -42,10 +42,12 @@ const Section = ({ className, projectId, description }: SectionProps) => {
                     Demo
                 </Link>
                 {description ? (
-                    <p className='break-words py-8'>{replaceURL(project.description)}</p>
+                    <p className="break-words py-8">
+                        {replaceURL(project.description)}
+                    </p>
                 ) : (
                     <MyLink
-                        href={`/projects/${projectId}`}
+                        href={`/projects/project/${projectId}`}
                         className="mt-4 mb-4 lg:mb-0 hover:outline-inherit"
                     >
                         {text.showmore}
@@ -55,7 +57,7 @@ const Section = ({ className, projectId, description }: SectionProps) => {
 
             <Link
                 className="relative mt-8 lg:mt-0"
-                href={`/projects/${projectId}`}
+                href={`/projects/project/${projectId}`}
             >
                 <Image
                     className="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
