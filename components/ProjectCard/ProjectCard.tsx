@@ -14,7 +14,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
 
     return project ? (
         <Link
-            className={`[&_img]:hover:blur-[2px] relative block min-h-[20rem] min-w-[18rem] max-w-md rounded border-2 border-violet text-white shadow [&_#showmore]:hover:bottom-0 [&_img]:hover:saturate-200 ${
+            className={`[&_img]:hover:blur-[2px] relative block min-h-[20rem] min-w-[18rem] w-full rounded border-2 border-violet text-white shadow [&_#showmore]:hover:bottom-0 [&_img]:hover:saturate-200 ${
                 className ? className : ''
             }`}
             href={`${text.links.project}${projectId}`}

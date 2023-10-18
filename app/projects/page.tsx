@@ -35,7 +35,7 @@ const page = ({ searchParams }: Props) => {
                 ))}
             </div>
 
-            <div className="flex flex-col flex-wrap gap-4 pt-4 md:flex-row mx-auto">
+            <div className="max-w-[1440px] mx-auto flex flex-col flex-wrap gap-4 pt-4 sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {projectsList
                     .filter((project) =>
                         searchParams.filter
