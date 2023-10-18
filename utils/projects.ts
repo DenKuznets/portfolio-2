@@ -12,7 +12,17 @@ export const getProject = (id: number) =>
     projects.find((proj) => proj.id === id);
 
 export interface techListType {
-    [key: string]: string;
+    react: string,
+    nextjs: string,
+    tailwind: string,
+    ts: string,
+    mui: string,
+    redux: string,
+    rest: string,
+    unittest: string,
+    storybook: string,
+    sc: string,
+    classic: string,
 }
 
 export const techList: techListType = {
@@ -23,10 +33,8 @@ export const techList: techListType = {
     mui: 'MUI',
     redux: 'REDUX',
     rest: 'REST',
-    // GRAPHQL: 'GRAPHQL',
-    jest: 'JEST',
+    unittest:"UNIT TESTING",
     storybook: 'STORYBOOK',
-    rtl: 'REACT-TESTING-LIBRARY',
     sc: 'STYLED-COMPONENTS',
     classic:"HTML CSS JS"
 };
@@ -39,9 +47,8 @@ export const projects: Project[] = [
             techList.react,
             techList.mui,
             techList.ts,
-            techList.jest,
-            techList.rtl,
-            techList.storybook
+            techList.storybook,
+            techList.unittest,
         ],
         img: 'rpc.webp',
         github: 'https://github.com/DenKuznets/rock-paper-scissors',
@@ -156,7 +163,7 @@ export const projects: Project[] = [
     {
         id: 12,
         name: 'мое портфолио',
-        tech: [techList.nextjs, techList.ts, techList.tailwind, techList.storybook],
+        tech: [techList.nextjs, techList.ts, techList.tailwind, techList.storybook, techList.unittest],
         img: 'myportfolio.webp',
         github: 'https://github.com/DenKuznets/portfolio',
         demo: 'https://denkuznets.vercel.app/',

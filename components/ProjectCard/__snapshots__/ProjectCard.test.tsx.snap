@@ -3,12 +3,12 @@
 exports[`renders ProjectCard unchanged 1`] = `
 <div>
   <a
-    class="container [&>img]:hover:saturate-200 shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[30rem] relative "
+    class="container relative block min-h-[20rem] max-w-sm rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 "
     href="/projects/1"
   >
     <img
       alt="rock paper scissors project image"
-      class="transition-all duration-300 blur-sm object-cover"
+      class="object-cover blur-sm transition-all duration-300"
       data-nimg="fill"
       decoding="async"
       loading="lazy"
@@ -18,44 +18,48 @@ exports[`renders ProjectCard unchanged 1`] = `
       style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
     />
     <h4
-      class="first-letter:capitalize shadow-xl font-bold text-white p-4 absolute top-0 left-0 bg-zinc-900/[.75] w-full"
+      class="absolute left-0 top-0 w-full bg-zinc-900/[.75] p-2 font-bold shadow-xl first-letter:capitalize"
     >
       rock paper scissors
     </h4>
-    <ul
-      class="absolute bottom-0 left-0 flex px-4 flex-wrap gap-3 items-center mb-4"
+    <div
+      class="absolute bottom-0 left-0 w-full"
     >
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
+      <ul
+        class="mb-4 flex flex-wrap items-center gap-2 px-2 "
       >
-        REACT
-      </li>
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
+        <li
+          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+        >
+          REACT
+        </li>
+        <li
+          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+        >
+          MUI
+        </li>
+        <li
+          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+        >
+          TS
+        </li>
+        <li
+          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+        >
+          STORYBOOK
+        </li>
+        <li
+          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+        >
+          UNIT TESTING
+        </li>
+      </ul>
+      <div
+        class="p-2 bg-zinc-900/[.75] font-sans font-bold"
       >
-        MUI
-      </li>
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
-      >
-        TS
-      </li>
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
-      >
-        JEST
-      </li>
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
-      >
-        REACT-TESTING-LIBRARY
-      </li>
-      <li
-        class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
-      >
-        STORYBOOK
-      </li>
-    </ul>
+        Подробнее
+      </div>
+    </div>
   </a>
 </div>
 `;

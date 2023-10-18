@@ -182,17 +182,12 @@ exports[`renders Home unchanged 1`] = `
           <li
             class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
           >
-            JEST
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
-          >
-            REACT-TESTING-LIBRARY
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
-          >
             STORYBOOK
+          </li>
+          <li
+            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+          >
+            UNIT TESTING
           </li>
         </ul>
         <a
