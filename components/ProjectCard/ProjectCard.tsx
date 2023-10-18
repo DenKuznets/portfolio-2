@@ -14,32 +14,37 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
 
     return project ? (
         <Link
-            className={`relative block min-h-[20rem] max-w-md min-w-[18rem] rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 ${
+            className={`relative block min-h-[20rem] min-w-[18rem] max-w-md rounded border-2 border-violet text-white shadow [&_img]:hover:saturate-200 [&_#showmore]:hover:bottom-0 ${
                 className ? className : ''
             }`}
             href={`${text.links.project}${projectId}`}
         >
-            <Image
-                className="object-cover blur-sm transition-all duration-300"
-                fill
-                src={`/images/works-preview/${project.img}`}
-                alt={`${project.name} project image`}
-            />
-            <h4 className="absolute left-0 top-0 w-full bg-zinc-900/[.75] p-2 font-bold shadow-xl first-letter:capitalize">
+            <div className="overflow-hidden">
+                <Image
+                    className="object-cover blur-sm transition-all duration-300"
+                    fill
+                    src={`/images/works-preview/${project.img}`}
+                    alt={`${project.name} project image`}
+                />
+            </div>
+            <h4 className="absolute left-0 top-0 w-full bg-violet/[.90] p-2 font-bold shadow-xl first-letter:capitalize">
                 {project.name}
             </h4>
-            <div className="absolute bottom-0 left-0 w-full">
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden">
                 <ul className="mb-4 flex flex-wrap items-center gap-2 px-2 ">
                     {project.tech.map((obj) => (
                         <li
-                            className="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs md:text-base"
+                            className="whitespace-nowrap rounded-md border border-dotted border-violet bg-customOrange/[.90] px-2 py-1 text-xs shadow-lg md:text-base"
                             key={obj}
                         >
                             {obj}
                         </li>
                     ))}
                 </ul>
-                <div className="p-2 bg-zinc-900/[.75] font-sans font-bold">
+                <div
+                    id="showmore"
+                    className="bottom-[-100%] w-full bg-violet/[.90] p-2 font-sans font-bold transition-all duration-300 lg:absolute"
+                >
                     {text.showmore}
                 </div>
             </div>
