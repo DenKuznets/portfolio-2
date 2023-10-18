@@ -8,17 +8,19 @@ import text from '@/utils/text';
 export default function Home() {
     return (
         <>
-            <main className=" uhd:max-w-[1920px] mx-auto pt-8 flex flex-col">
+            <main className=" mx-auto flex flex-col uhd:max-w-[1920px]">
                 <Hero />
                 <h2
                     id="examples"
-                    className="bg-violet text-white container font-bold text-center mt-4 sm:mt-8 underline py-10 text-3xl sm:text-4xl"
+                    className="container mt-4 bg-violet py-10 text-center text-3xl font-bold text-white underline sm:mt-8 sm:text-4xl"
                 >
                     {text.examples}
                 </h2>
-                <Section className="bg-violet text-white" projectId={1} />
-                <Section projectId={2} />
-                <Section className="bg-customYellow" projectId={3} />
+                <div className="flex-col flex gap-8">
+                    <Section className="bg-violet text-white" projectId={1} />
+                    <Section projectId={2} />
+                    <Section className="bg-customYellow" projectId={3} />
+                </div>
                 <MyLink className="mx-auto my-8 font-bold" href="/projects">
                     {text.allWorks}
                 </MyLink>
