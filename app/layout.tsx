@@ -21,7 +21,7 @@ export default function RootLayout({
             lang="ru"
         >
             <body
-                className={`pb-10 pt-14 md:pt-20  min-h-screen p-0 relative text-almostBlack text-lg first-letter:uppercase`}
+                className={`pb-16 sm:pb-24 pt-14 md:pt-20  min-h-screen p-0 relative text-almostBlack text-lg first-letter:uppercase`}
             >
             <Header />
                 {children}

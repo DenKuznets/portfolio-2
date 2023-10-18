@@ -21,7 +21,7 @@ export default function Home() {
                     <Section projectId={2} />
                     <Section className="bg-customYellow" projectId={3} />
                 </div>
-                <MyLink className="mx-auto my-8 font-bold" href="/projects">
+                <MyLink className="mx-auto mt-8 font-bold" href="/projects">
                     {text.allWorks}
                 </MyLink>
             </main>
