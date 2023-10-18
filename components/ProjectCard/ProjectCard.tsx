@@ -14,30 +14,35 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
 
     return project ? (
         <Link
-            className={`container [&>img]:hover:saturate-200 shadow border-2 border-zinc-900 rounded block max-w-sm min-h-[20rem] relative ${
+            className={`container relative block min-h-[20rem] max-w-sm rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 ${
                 className ? className : ''
             }`}
             href={`${text.links.project}${projectId}`}
         >
             <Image
-                className="transition-all duration-300 blur-sm object-cover"
+                className="object-cover blur-sm transition-all duration-300"
                 fill
                 src={`/images/works-preview/${project.img}`}
                 alt={`${project.name} project image`}
             />
-            <h4 className="first-letter:capitalize shadow-xl font-bold text-white p-2 absolute top-0 left-0 bg-zinc-900/[.75] w-full">
+            <h4 className="absolute left-0 top-0 w-full bg-zinc-900/[.75] p-2 font-bold shadow-xl first-letter:capitalize">
                 {project.name}
             </h4>
-            <ul className="absolute bottom-0 left-0 flex px-4 flex-wrap gap-2 items-center mb-4">
-                {project.tech.map((obj) => (
-                    <li
-                        className="whitespace-nowrap text-xs px-2 py-1 border-dotted rounded-md border-white text-white bg-zinc-900/[.75] border"
-                        key={obj}
-                    >
-                        {obj}
-                    </li>
-                ))}
-            </ul>
+            <div className="absolute bottom-0 left-0 w-full">
+                <ul className="mb-4 flex flex-wrap items-center gap-2 px-2 ">
+                    {project.tech.map((obj) => (
+                        <li
+                            className="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+                            key={obj}
+                        >
+                            {obj}
+                        </li>
+                    ))}
+                </ul>
+                <div className="p-2 bg-zinc-900/[.75] font-sans font-bold">
+                    {text.showmore}
+                </div>
+            </div>
         </Link>
     ) : (
         <div>project not found</div>
