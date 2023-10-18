@@ -3,59 +3,64 @@
 exports[`renders ProjectCard unchanged 1`] = `
 <div>
   <a
-    class="container relative block min-h-[20rem] max-w-sm rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 "
+    class="[&_img]:hover:blur-[2px] relative block min-h-[20rem] min-w-[18rem] max-w-md rounded border-2 border-violet text-white shadow [&_#showmore]:hover:bottom-0 [&_img]:hover:saturate-200 "
     href="/projects/1"
   >
-    <img
-      alt="rock paper scissors project image"
-      class="object-cover blur-sm transition-all duration-300"
-      data-nimg="fill"
-      decoding="async"
-      loading="lazy"
-      sizes="100vw"
-      src="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=3840&q=75"
-      srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=3840&q=75 3840w"
-      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-    />
+    <div
+      class="overflow-hidden"
+    >
+      <img
+        alt="rock paper scissors project image"
+        class="object-cover blur-sm transition-all duration-300"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=3840&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
     <h4
-      class="absolute left-0 top-0 w-full bg-zinc-900/[.75] p-2 font-bold shadow-xl first-letter:capitalize"
+      class="absolute left-0 top-0 w-full bg-violet/[.85]  p-2 shadow-xl first-letter:capitalize"
     >
       rock paper scissors
     </h4>
     <div
-      class="absolute bottom-0 left-0 w-full"
+      class="absolute bottom-0 left-0 w-full overflow-hidden"
     >
       <ul
         class="mb-4 flex flex-wrap items-center gap-2 px-2 "
       >
         <li
-          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+          class="whitespace-nowrap rounded-md border border-dotted border-violet bg-customYellow/75 px-2 py-1 text-xs text-almostBlack shadow-lg md:text-base"
         >
           REACT
         </li>
         <li
-          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+          class="whitespace-nowrap rounded-md border border-dotted border-violet bg-customYellow/75 px-2 py-1 text-xs text-almostBlack shadow-lg md:text-base"
         >
           MUI
         </li>
         <li
-          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+          class="whitespace-nowrap rounded-md border border-dotted border-violet bg-customYellow/75 px-2 py-1 text-xs text-almostBlack shadow-lg md:text-base"
         >
           TS
         </li>
         <li
-          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+          class="whitespace-nowrap rounded-md border border-dotted border-violet bg-customYellow/75 px-2 py-1 text-xs text-almostBlack shadow-lg md:text-base"
         >
           STORYBOOK
         </li>
         <li
-          class="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+          class="whitespace-nowrap rounded-md border border-dotted border-violet bg-customYellow/75 px-2 py-1 text-xs text-almostBlack shadow-lg md:text-base"
         >
           UNIT TESTING
         </li>
       </ul>
       <div
-        class="p-2 bg-zinc-900/[.75] font-sans font-bold"
+        class="bottom-[-100%] w-full bg-violet/[.85] p-2 font-sans transition-all duration-300 lg:absolute"
+        id="showmore"
       >
         Подробнее
       </div>
