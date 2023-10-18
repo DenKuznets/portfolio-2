@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <header
             data-testid={'header'}
-            className="w-full top-0 z-10 shadow-md md:fixed md:p-4 flex justify-between p-2 bg-white"
+            className="w-full top-0 z-10 shadow-md absolute md:fixed md:p-4 flex justify-between p-2 bg-white"
         >
             <Link
                 className="flex items-center text-inherit hover:no-underline"

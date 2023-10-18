@@ -11,7 +11,7 @@ type Props = {
 
 const page = ({ searchParams }: Props) => {
     return (
-        <div className="container px-2 pt-8 sm:pt-24 md:px-4">
+        <div className="container px-2 md:px-4">
             <div className="mx-auto flex  max-w-3xl flex-wrap justify-center gap-x-4 gap-y-2 sm:pb-6">
                 <Link
                     className={`cursor-pointer rounded border p-1 text-xs uppercase no-underline  sm:p-2 sm:text-sm md:text-base ${

@@ -9,7 +9,7 @@ const Footer = () => {
         { link: text.links.inst, icon: instSvg }
     ];
   return (
-      <div className="container flex justify-center gap-12 py-2 sm:py-6 bg-almostBlack">
+      <div className="container absolute min-w-full bottom-0 flex justify-center gap-12 py-2 sm:py-6 bg-almostBlack">
           {socials.map((obj) => (
               <Link
                   className="hover:scale-125 transition-all text-white"
