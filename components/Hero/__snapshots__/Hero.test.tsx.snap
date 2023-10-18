@@ -3,7 +3,7 @@
 exports[`renders hero unchanged 1`] = `
 <div>
   <div
-    class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
+    class="container sm:mt-[40px] md:mt-[60px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
     data-testid="hero_container"
     id="#hero"
   >

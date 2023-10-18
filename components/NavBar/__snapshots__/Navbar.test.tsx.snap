@@ -24,6 +24,14 @@ exports[`renders navbar unchanged 1`] = `
           Примеры работ
         </a>
       </li>
+      <li>
+        <a
+          class="text-gray-500 hover:text-almostBlack"
+          href="/projects"
+        >
+          Все проекты
+        </a>
+      </li>
     </ul>
   </nav>
 </div>

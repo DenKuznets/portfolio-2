@@ -3,10 +3,10 @@
 exports[`renders Home unchanged 1`] = `
 <div>
   <main
-    class=" uhd:max-w-[1920px] mx-auto pt-8 flex flex-col"
+    class=" mx-auto flex flex-col uhd:max-w-[1920px]"
   >
     <div
-      class="container md:mt-[90px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
+      class="container sm:mt-[40px] md:mt-[60px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
       data-testid="hero_container"
       id="#hero"
     >
@@ -146,269 +146,273 @@ exports[`renders Home unchanged 1`] = `
       />
     </div>
     <h2
-      class="bg-violet text-white container font-bold text-center mt-4 sm:mt-8 underline py-10 text-3xl sm:text-4xl"
+      class="container mt-4 bg-violet py-10 text-center text-3xl font-bold text-white underline sm:mt-8 sm:text-4xl"
       id="examples"
     >
       Примеры работ
     </h2>
     <div
-      class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between bg-violet text-white"
-      data-testid="section"
+      class="flex-col flex gap-8"
     >
-      <div>
-        <h3
-          class="font-bold leading-normal mb-4 first-letter:capitalize"
-        >
-          rock paper scissors
-        </h3>
-        <ul
-          class="flex flex-wrap gap-3 items-center mb-4"
-        >
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+      <div
+        class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between bg-violet text-white"
+        data-testid="section"
+      >
+        <div>
+          <h3
+            class="font-bold leading-normal mb-4 first-letter:capitalize"
           >
-            REACT
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            rock paper scissors
+          </h3>
+          <ul
+            class="flex flex-wrap gap-3 items-center mb-4"
           >
-            MUI
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              REACT
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              MUI
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              TS
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              STORYBOOK
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              UNIT TESTING
+            </li>
+          </ul>
+          <a
+            class="text-sm sm:text-lg"
+            href="https://github.com/DenKuznets/rock-paper-scissors"
           >
-            TS
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            Github
+          </a>
+           
+          |
+           
+          <a
+            class="text-sm sm:text-lg"
+            href="https://rock-paper-scissors-kappa-tawny.vercel.app/"
           >
-            STORYBOOK
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
-          >
-            UNIT TESTING
-          </li>
-        </ul>
-        <a
-          class="text-sm sm:text-lg"
-          href="https://github.com/DenKuznets/rock-paper-scissors"
-        >
-          Github
-        </a>
-         
-        |
-         
-        <a
-          class="text-sm sm:text-lg"
-          href="https://rock-paper-scissors-kappa-tawny.vercel.app/"
-        >
-          Demo
-        </a>
-        <a
-          class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            Demo
+          </a>
+          <a
+            class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
             mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+            href="/projects/1"
+          >
+            Подробнее
+            <svg
+              class="fill-current"
+              height="30px"
+              style="stroke: currentColor;"
+              viewBox="0 0 24 24"
+              width="30px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </div>
+        <a
+          class="relative mt-8 lg:mt-0"
           href="/projects/1"
         >
-          Подробнее
-          <svg
-            class="fill-current"
-            height="30px"
-            style="stroke: currentColor;"
-            viewBox="0 0 24 24"
-            width="30px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 17L17 7M17 7H8M17 7V16"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
+          <img
+            alt="rock paper scissors project image"
+            class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
+            data-nimg="1"
+            decoding="async"
+            height="600"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75 2x"
+            style="color: transparent;"
+            width="800"
+          />
         </a>
       </div>
-      <a
-        class="relative mt-8 lg:mt-0"
-        href="/projects/1"
+      <div
+        class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between "
+        data-testid="section"
       >
-        <img
-          alt="rock paper scissors project image"
-          class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
-          data-nimg="1"
-          decoding="async"
-          height="600"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75"
-          srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Frpc.webp&w=1920&q=75 2x"
-          style="color: transparent;"
-          width="800"
-        />
-      </a>
-    </div>
-    <div
-      class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between "
-      data-testid="section"
-    >
-      <div>
-        <h3
-          class="font-bold leading-normal mb-4 first-letter:capitalize"
-        >
-          коммерческий сайт
-        </h3>
-        <ul
-          class="flex flex-wrap gap-3 items-center mb-4"
-        >
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+        <div>
+          <h3
+            class="font-bold leading-normal mb-4 first-letter:capitalize"
           >
-            HTML CSS JS
-          </li>
-        </ul>
-        <a
-          class="text-sm sm:text-lg"
-          href="https://github.com/DenKuznets/tes.loc"
-        >
-          Github
-        </a>
-         
-        |
-         
-        <a
-          class="text-sm sm:text-lg"
-          href="https://tul-energo-service.ru/"
-        >
-          Demo
-        </a>
-        <a
-          class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            коммерческий сайт
+          </h3>
+          <ul
+            class="flex flex-wrap gap-3 items-center mb-4"
+          >
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              HTML CSS JS
+            </li>
+          </ul>
+          <a
+            class="text-sm sm:text-lg"
+            href="https://github.com/DenKuznets/tes.loc"
+          >
+            Github
+          </a>
+           
+          |
+           
+          <a
+            class="text-sm sm:text-lg"
+            href="https://tul-energo-service.ru/"
+          >
+            Demo
+          </a>
+          <a
+            class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
             mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+            href="/projects/2"
+          >
+            Подробнее
+            <svg
+              class="fill-current"
+              height="30px"
+              style="stroke: currentColor;"
+              viewBox="0 0 24 24"
+              width="30px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </div>
+        <a
+          class="relative mt-8 lg:mt-0"
           href="/projects/2"
         >
-          Подробнее
-          <svg
-            class="fill-current"
-            height="30px"
-            style="stroke: currentColor;"
-            viewBox="0 0 24 24"
-            width="30px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 17L17 7M17 7H8M17 7V16"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
+          <img
+            alt="коммерческий сайт project image"
+            class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
+            data-nimg="1"
+            decoding="async"
+            height="600"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=1920&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=1920&q=75 2x"
+            style="color: transparent;"
+            width="800"
+          />
         </a>
       </div>
-      <a
-        class="relative mt-8 lg:mt-0"
-        href="/projects/2"
+      <div
+        class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between bg-customYellow"
+        data-testid="section"
       >
-        <img
-          alt="коммерческий сайт project image"
-          class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
-          data-nimg="1"
-          decoding="async"
-          height="600"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=1920&q=75"
-          srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Ftes.webp&w=1920&q=75 2x"
-          style="color: transparent;"
-          width="800"
-        />
-      </a>
-    </div>
-    <div
-      class="container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between bg-customYellow"
-      data-testid="section"
-    >
-      <div>
-        <h3
-          class="font-bold leading-normal mb-4 first-letter:capitalize"
-        >
-          тестовое задание
-        </h3>
-        <ul
-          class="flex flex-wrap gap-3 items-center mb-4"
-        >
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+        <div>
+          <h3
+            class="font-bold leading-normal mb-4 first-letter:capitalize"
           >
-            REACT
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            тестовое задание
+          </h3>
+          <ul
+            class="flex flex-wrap gap-3 items-center mb-4"
           >
-            STYLED-COMPONENTS
-          </li>
-          <li
-            class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              REACT
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              STYLED-COMPONENTS
+            </li>
+            <li
+              class="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+            >
+              REST
+            </li>
+          </ul>
+          <a
+            class="text-sm sm:text-lg"
+            href="https://github.com/DenKuznets/dls-test"
           >
-            REST
-          </li>
-        </ul>
-        <a
-          class="text-sm sm:text-lg"
-          href="https://github.com/DenKuznets/dls-test"
-        >
-          Github
-        </a>
-         
-        |
-         
-        <a
-          class="text-sm sm:text-lg"
-          href="https://dls-test.vercel.app/"
-        >
-          Demo
-        </a>
-        <a
-          class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
+            Github
+          </a>
+           
+          |
+           
+          <a
+            class="text-sm sm:text-lg"
+            href="https://dls-test.vercel.app/"
+          >
+            Demo
+          </a>
+          <a
+            class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
             mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+            href="/projects/3"
+          >
+            Подробнее
+            <svg
+              class="fill-current"
+              height="30px"
+              style="stroke: currentColor;"
+              viewBox="0 0 24 24"
+              width="30px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </div>
+        <a
+          class="relative mt-8 lg:mt-0"
           href="/projects/3"
         >
-          Подробнее
-          <svg
-            class="fill-current"
-            height="30px"
-            style="stroke: currentColor;"
-            viewBox="0 0 24 24"
-            width="30px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 17L17 7M17 7H8M17 7V16"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
+          <img
+            alt="тестовое задание project image"
+            class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
+            data-nimg="1"
+            decoding="async"
+            height="600"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=1920&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=1920&q=75 2x"
+            style="color: transparent;"
+            width="800"
+          />
         </a>
       </div>
-      <a
-        class="relative mt-8 lg:mt-0"
-        href="/projects/3"
-      >
-        <img
-          alt="тестовое задание project image"
-          class="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
-          data-nimg="1"
-          decoding="async"
-          height="600"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=1920&q=75"
-          srcset="/_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=828&q=75 1x, /_next/image?url=%2Fimages%2Fworks-preview%2Ftest1.webp&w=1920&q=75 2x"
-          style="color: transparent;"
-          width="800"
-        />
-      </a>
     </div>
     <a
       class="hover:outline-[currentColor] text-inherit hover:outline-1 hover:outline outline-none text-sm sm:text-lg border-none transition-all flex w-fit items-center rounded-2xl px-8 sm:px-10 py-4 sm:py-5 [&>svg]:hover:rotate-45 [&>svg]:ml-2  [&>svg]:transition-all 
-            mx-auto my-8 font-bold"
+            mx-auto mt-8 font-bold"
       href="/projects"
     >
       Все проекты
