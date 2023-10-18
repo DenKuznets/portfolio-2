@@ -15,7 +15,7 @@ const page = ({ searchParams }: Props) => {
             <div className="mx-auto flex  max-w-3xl flex-wrap justify-center gap-x-4 gap-y-2 sm:pb-6">
                 <Link
                     className={`cursor-pointer rounded border p-1 text-xs uppercase no-underline  sm:p-2 sm:text-sm md:text-base ${
-                        !searchParams.filter && 'bg-red-500'
+                        !searchParams.filter && 'bg-customYellow '
                     }`}
                     href={text.links.project}
                 >
@@ -24,7 +24,8 @@ const page = ({ searchParams }: Props) => {
                 {Object.keys(techList).map((key) => (
                     <Link
                         className={`cursor-pointer rounded border p-1 text-xs sm:p-2 sm:text-sm  md:text-base ${
-                            searchParams.filter === key && 'bg-red-500'
+                            searchParams.filter === key &&
+                            'bg-customYellow'
                         }`}
                         key={techList[key as keyof techListType]}
                         href={`/projects?filter=${key}`}
@@ -34,7 +35,7 @@ const page = ({ searchParams }: Props) => {
                 ))}
             </div>
 
-            <div className="flex flex-col gap-4 py-4 md:flex-row flex-wrap justify-center">
+            <div className="flex flex-col flex-wrap justify-center gap-4 py-4 md:flex-row">
                 {projectsList
                     .filter((project) =>
                         searchParams.filter
