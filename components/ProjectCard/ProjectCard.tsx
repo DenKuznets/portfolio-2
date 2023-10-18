@@ -14,7 +14,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
 
     return project ? (
         <Link
-            className={`container relative block min-h-[20rem] max-w-sm rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 ${
+            className={`relative block min-h-[20rem] max-w-md min-w-[18rem] rounded border-2 border-zinc-900 text-white shadow [&>img]:hover:saturate-200 ${
                 className ? className : ''
             }`}
             href={`${text.links.project}${projectId}`}
@@ -32,7 +32,7 @@ const ProjectCard = ({ className, projectId }: ProjectCardProps) => {
                 <ul className="mb-4 flex flex-wrap items-center gap-2 px-2 ">
                     {project.tech.map((obj) => (
                         <li
-                            className="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs"
+                            className="border-currentColor whitespace-nowrap rounded-md border border-dotted bg-zinc-900/[.75] px-2 py-1 text-xs md:text-base"
                             key={obj}
                         >
                             {obj}

@@ -34,7 +34,7 @@ const page = ({ searchParams }: Props) => {
                 ))}
             </div>
 
-            <div className="flex flex-col gap-4 py-4 md:grid md:grid-cols-2 lg:grid-cols-3 lg:grid-flow-dense">
+            <div className="flex flex-col gap-4 py-4 md:flex-row flex-wrap justify-center">
                 {projectsList
                     .filter((project) =>
                         searchParams.filter
