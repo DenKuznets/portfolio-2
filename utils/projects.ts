@@ -12,17 +12,17 @@ export const getProject = (id: number) =>
     projects.find((proj) => proj.id === id);
 
 export interface techListType {
-    react: string,
-    nextjs: string,
-    tailwind: string,
-    ts: string,
-    mui: string,
-    redux: string,
-    rest: string,
-    unittest: string,
-    storybook: string,
-    sc: string,
-    classic: string,
+    react: string;
+    nextjs: string;
+    tailwind: string;
+    ts: string;
+    mui: string;
+    redux: string;
+    rest: string;
+    unittest: string;
+    storybook: string;
+    sc: string;
+    classic: string;
 }
 
 export const techList: techListType = {
@@ -33,22 +33,22 @@ export const techList: techListType = {
     mui: 'MUI',
     redux: 'REDUX',
     rest: 'REST',
-    unittest:"UNIT TESTING",
+    unittest: 'UNIT TESTING',
     storybook: 'STORYBOOK',
     sc: 'STYLED-COMPONENTS',
-    classic:"HTML CSS JS"
+    classic: 'HTML CSS JS'
 };
 
 export const projects: Project[] = [
     {
         id: 1,
-        name: 'rock paper scissors',
+        name: 'Игра Rock Paper Scissors',
         tech: [
             techList.react,
             techList.mui,
             techList.ts,
             techList.storybook,
-            techList.unittest,
+            techList.unittest
         ],
         img: 'rpc.webp',
         github: 'https://github.com/DenKuznets/rock-paper-scissors',
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     },
     {
         id: 2,
-        name: 'коммерческий сайт',
+        name: 'лэндинг',
         tech: [techList.classic],
         img: 'tes.webp',
         github: 'https://github.com/DenKuznets/tes.loc',
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        name: 'тестовое задание',
+        name: 'список постов с поиском',
         tech: [techList.react, techList.sc, techList.rest],
         img: 'test1.webp',
         github: 'https://github.com/DenKuznets/dls-test',
@@ -83,20 +83,20 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        name: 'тестовое задание для web-студии',
-        tech: [techList.react, techList.sc],
-        img: 'webstudio.webp',
-        github: 'https://github.com/DenKuznets/testovoe-alexmedia',
-        demo: 'https://denkuznets.github.io/testovoe-alexmedia/',
-        description: `Тестовое задание по макету Figma и ТЗ: 
-                        1) Сделать липкое меню.
-                        2) Мобильное и декстпное меню должно в html быть одним блоком. 
-                        3) Добавить Анимации по своему усмотрению. Можно использовать сторонние библиотеки , но без jquery.(не обязательно)
-                        4) Cделать popup и в форме предусмотреть валидацию, Пока не заполненны все поля кнопка должна быть неактивна.(не обязательно)
-                        5) Ховеры на ссылки, по своему усмотрению.
-                        6) Мобильная верстка`
+        name: 'мое портфолио',
+        tech: [
+            techList.nextjs,
+            techList.ts,
+            techList.tailwind,
+            techList.storybook,
+            techList.unittest
+        ],
+        img: 'myportfolio.webp',
+        github: 'https://github.com/DenKuznets/portfolio',
+        demo: 'https://denkuznets.vercel.app/',
+        description: `Этот сайт портфолио я разработал сам, вдохновляясь примерами таких работ как https://stefantopalovicdev.vercel.app/ , https://caferati.me/portfolio , https://brittanychiang.com/ и http://riccardozanutta.com/ . 
+                    За основу дизайна использовал этот шаблон https://themeforest.net/item/orido-personal-portfolio-website-figma-template/screenshots/37527613?index=1`
     },
-
     {
         id: 5,
         name: 'портфолио',
@@ -160,15 +160,21 @@ export const projects: Project[] = [
         demo: 'https://mup-komfort.ru/',
         description: `Верстка лэндинга по заказу web-студии alex-media.ru по макету Figma с соблюдением дедлайна, pixel-perfect попаданием в адаптивные брейкпоинты. В сотрудничестве с дизайнером и backend-разработчиком (php, laravel, blade)`
     },
+
     {
         id: 12,
-        name: 'мое портфолио',
-        tech: [techList.nextjs, techList.ts, techList.tailwind, techList.storybook, techList.unittest],
-        img: 'myportfolio.webp',
-        github: 'https://github.com/DenKuznets/portfolio',
-        demo: 'https://denkuznets.vercel.app/',
-        description: `Этот сайт портфолио я разработал сам, вдохновляясь примерами таких работ как https://stefantopalovicdev.vercel.app/ , https://caferati.me/portfolio , https://brittanychiang.com/ и http://riccardozanutta.com/ . 
-                    За основу дизайна использовал этот шаблон https://themeforest.net/item/orido-personal-portfolio-website-figma-template/screenshots/37527613?index=1`
+        name: 'тестовое задание для web-студии',
+        tech: [techList.react, techList.sc],
+        img: 'webstudio.webp',
+        github: 'https://github.com/DenKuznets/testovoe-alexmedia',
+        demo: 'https://denkuznets.github.io/testovoe-alexmedia/',
+        description: `Тестовое задание по макету Figma и ТЗ: 
+                        1) Сделать липкое меню.
+                        2) Мобильное и декстпное меню должно в html быть одним блоком. 
+                        3) Добавить Анимации по своему усмотрению. Можно использовать сторонние библиотеки , но без jquery.(не обязательно)
+                        4) Cделать popup и в форме предусмотреть валидацию, Пока не заполненны все поля кнопка должна быть неактивна.(не обязательно)
+                        5) Ховеры на ссылки, по своему усмотрению.
+                        6) Мобильная верстка`
     },
 
     {

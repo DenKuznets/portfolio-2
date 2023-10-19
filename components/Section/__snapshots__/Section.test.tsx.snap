@@ -10,7 +10,7 @@ exports[`renders Section unchanged 1`] = `
       <h3
         class="mb-4 font-bold leading-normal first-letter:capitalize"
       >
-        rock paper scissors
+        Игра Rock Paper Scissors
       </h3>
       <ul
         class="mb-4 flex flex-wrap items-center gap-3"
@@ -84,7 +84,7 @@ exports[`renders Section unchanged 1`] = `
       href="https://rock-paper-scissors-kappa-tawny.vercel.app/"
     >
       <img
-        alt="rock paper scissors project image"
+        alt="Игра Rock Paper Scissors project image"
         class="shadow-2xl filter-none transition-all duration-300 hover:saturate-150"
         data-nimg="1"
         decoding="async"

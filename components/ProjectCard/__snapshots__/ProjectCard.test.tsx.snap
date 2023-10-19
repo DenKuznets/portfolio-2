@@ -10,7 +10,7 @@ exports[`renders ProjectCard unchanged 1`] = `
       class="overflow-hidden"
     >
       <img
-        alt="rock paper scissors project image"
+        alt="Игра Rock Paper Scissors project image"
         class="object-cover blur-sm transition-all duration-300"
         data-nimg="fill"
         decoding="async"
@@ -24,7 +24,7 @@ exports[`renders ProjectCard unchanged 1`] = `
     <h4
       class="absolute left-0 top-0 w-full bg-violet/[.85]  p-2 shadow-xl first-letter:capitalize"
     >
-      rock paper scissors
+      Игра Rock Paper Scissors
     </h4>
     <div
       class="absolute bottom-0 left-0 w-full overflow-hidden"
