@@ -16,18 +16,18 @@ const Section = ({ className, projectId, description }: SectionProps) => {
     return project ? (
         <div
             data-testid="section"
-            className={`container px-2 md:px-4 lg:grid grid-cols-2 items-center lg:gap-8 py-8 justify-between ${
+            className={`container grid-cols-2 items-center justify-between px-2 py-8 md:px-4 lg:grid lg:gap-8 ${
                 className ? className : ''
             }`}
         >
             <div>
-                <h3 className="font-bold leading-normal mb-4 first-letter:capitalize">
+                <h3 className="mb-4 font-bold leading-normal first-letter:capitalize">
                     {project.name}
                 </h3>
-                <ul className="flex flex-wrap gap-3 items-center mb-4">
+                <ul className="mb-4 flex flex-wrap items-center gap-3">
                     {project.tech.map((obj) => (
                         <li
-                            className="whitespace-nowrap px-4 py-2 border-dotted rounded-md border-[currentColor] border text-sm sm:text-lg"
+                            className="whitespace-nowrap rounded-md border border-dotted border-[currentColor] px-4 py-2 text-sm sm:text-lg"
                             key={obj}
                         >
                             {obj}
@@ -48,19 +48,16 @@ const Section = ({ className, projectId, description }: SectionProps) => {
                 ) : (
                     <MyLink
                         href={`${text.links.project}${projectId}`}
-                        className="mt-4 mb-4 lg:mb-0 hover:outline-inherit"
+                        className="mb-4 mt-4 hover:outline-inherit lg:mb-0"
                     >
                         {text.showmore}
                     </MyLink>
                 )}
             </div>
 
-            <Link
-                className="relative mt-8 lg:mt-0"
-                href={`${text.links.project}${projectId}`}
-            >
+            <Link className="relative mt-8 lg:mt-0" href={project.demo}>
                 <Image
-                    className="filter-none shadow-2xl hover:saturate-150 transition-all duration-300"
+                    className="shadow-2xl filter-none transition-all duration-300 hover:saturate-150"
                     width={800}
                     height={600}
                     src={`/images/works-preview/${project.img}`}
