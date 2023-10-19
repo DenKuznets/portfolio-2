@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import Hero, { hero_testids } from './Hero';
 import '@testing-library/jest-dom';
