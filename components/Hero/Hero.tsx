@@ -19,11 +19,11 @@ const Hero = () => {
     return (
         <div
             data-testid={hero_testids.hero_container}
-            id='#hero'
-            className="container sm:mt-[40px] md:mt-[60px] mx-auto flex flex-col items-center lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8 px-2 md:px-4"
+            id="#hero"
+            className="container mx-auto flex flex-col items-center px-2 sm:mt-[40px] md:mt-[60px] md:px-4 lg:grid lg:grid-cols-2 lg:justify-between lg:gap-8"
         >
             <div>
-                <h1 className="font-bold text-5xl sm:text-6xl">
+                <h1 className="text-5xl font-bold sm:text-6xl">
                     {text.hero.fname} {text.hero.lname}
                 </h1>
                 <div className="mt-1 flex items-center justify-end md:justify-start">
@@ -32,30 +32,33 @@ const Hero = () => {
                         {text.hero.profession}
                     </span>
                 </div>
-                <p className="color-black-900 mt-10 text-center md:text-start  uppercase leading-normal">
+                <p className="color-black-900 mt-10 text-center uppercase  leading-normal md:text-start">
                     {text.hero.stack}
                 </p>
 
                 <div className="mt-14 flex flex-col items-center gap-4 md:flex-row ">
                     <MyLink
-                        className="bg-violet [&&]:text-white [&&]:hover:text-amber-400 [&>svg]:hover:fill-amber-400 [&&]:hover:outline-none"
+                        className="bg-violet [&&]:text-white [&&]:hover:text-amber-400 [&&]:hover:outline-none [&>svg]:hover:fill-amber-400"
                         href={text.links.tg}
                         svg={telegramSvg}
                     >
                         {text.hero.contactme}
                     </MyLink>
-                    <MyLink  className="whitespace-nowrap text-black" href="/projects">
+                    <MyLink
+                        className="whitespace-nowrap text-black"
+                        href="/projects"
+                    >
                         {text.myWorks}
                     </MyLink>
                 </div>
-                <div className="flex justify-center items-center mt-8 md:mt-14 md:justify-start">
-                    <span className="first-letter:capitalize text-sm sm:text-lg">
+                <div className="mb-4 mt-8 flex items-center justify-center md:mt-14 md:justify-start">
+                    <span className="text-sm first-letter:capitalize sm:text-lg">
                         {text.hero.socials}:
                     </span>
-                    <div className="flex px-4 gap-6">
+                    <div className="flex gap-6 px-4">
                         {socials.map((obj) => (
                             <Link
-                                className="hover:scale-125 transition-all"
+                                className="transition-all hover:scale-125"
                                 key={obj.link}
                                 href={obj.link}
                             >
@@ -71,7 +74,7 @@ const Hero = () => {
                 </div>
             </div>
             <Image
-                className="max-lg:hidden rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-[15px_15px_50px_rgba(0,0,0,0.2)]"
+                className="rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-[15px_15px_50px_rgba(0,0,0,0.2)] max-lg:hidden"
                 width={700}
                 height={900}
                 src={avatarPic}
